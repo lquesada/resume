@@ -1,0 +1,256 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Resume template - https://github.com/lquesada/resume
+%% Check that URL for licensing information.
+%% 
+%% Copyright (c) 2021, Luis Quesada Torres -
+%% https://github.com/lquesada | www.luisquesada.com
+%%
+%% Heavily based on (and old version of) the SIMPLE-RESUME-CV
+%% by zachscrivena, which is unlicensed.
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("resume.tex")
+%% TEX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%
+%% PDF ---(pdf2htmlEX)> HTML:
+%%
+%% Install pdf2htmlEX from https://github.com/coolwanglu/pdf2htmlEX, then:
+%%   alias pdf2htmlEX='docker run -ti --rm -v `pwd`:/pdf bwits/pdf2htmlex pdf2htmlEX'
+%%   pdf2htmlEX --zoom 1.5 --process-outline 0 resume.pdf
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Note: Search "SIZEMARKER" to find settings you can tweak to
+%       make the page, the margins, or the text bigger or smaller.
+
+
+% SIZEMARKER: You may want to replace "letterpaper" with "a4paper", but when
+% exporting to html, letterpaper can be printed in both letter and A4 sheets
+% of paper.
+% SIZEMARKER: You may also want to tweak the font size.
+\documentclass[letterpaper,10pt,oneside]{article}
+
+% Long table for page layout.
+\usepackage{longtable}
+\usepackage{calc}
+
+% SIZEMARKER: Page margins
+\usepackage[
+left=0.37in,
+right=0.65in,
+top=0.85in,
+bottom=0.45in,
+nohead,
+includefoot]{geometry}
+
+% Hyphenation: Disabled.
+\usepackage[none]{hyphenat}
+
+% XeLaTeX packages.
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+\renewcommand*{\familydefault}{\sfdefault}
+
+
+% PDF settings and properties.
+
+% Headers and footers: Blank header, page number in footer.
+% Commented: I don't want the page number in footer.
+\makeatletter
+\def\ps@plain{%
+\def\@oddhead{}%
+\def\@evenhead{}%
+\def\@oddfoot{}%
+\def\@evenfoot{}}
+%\def\@oddfoot{\footnotesize\hfill{Page}~{\thepage}~of~\pageref{LastPage}\hfill}%
+%\def\@evenfoot{\footnotesize\hfill{Page}~{\thepage}~of~\pageref{LastPage}\hfill}}
+\makeatother
+
+\pagestyle{plain}
+
+% Paragraph style: No indentation.
+\setlength{\parindent}{0in}
+
+% SIZEMARKER: Line spacing
+\renewcommand{\baselinestretch}{1.35}
+
+\newcommand{\DatestampY}[1]{#1}
+
+% Macro: body (rest of the document).
+% SIZEMARKER: Left vs. right columns
+\newenvironment{body}
+{\par\par
+\begin{longtable}{p{0.125\textwidth}p{0.84\textwidth}}}
+{\par\end{longtable}\par}
+
+% Macro: section (new section for Education, Research Experience, etc.).
+% SIZEMARKER: The separation here is between sections.
+\renewcommand{\section}[3]{\\[-0.7cm]\pdfbookmark[2]{#2}{#3}\\%
+\raggedleft  %align to the right
+{\fontsize{9.5pt}{9.5pt}\selectfont\bfseries\raggedright%
+\MakeUppercase{#1}}&}
+
+% SIZEMARKER: SmallEntryGap is a small vertical gap within a long entry
+\newcommand{\SmallEntryGap}{\par\vspace{0.38em}\par} 
+
+% Round image
+\usepackage{tikz}
+
+\newcommand{\roundpic}[4][]{
+\tikz\node [circle, minimum width = #2,
+path picture = {
+\node [#1] at (path picture bounding box.center) {
+\includegraphics[width=#3]{#4}};
+}] {};}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% CV Info (to be customized).
+\newcommand{\CVTitle}{Luis Quesada Torres}
+\newcommand{\CVNote}{CV compiled on {\today}}
+
+% PDF settings and properties.
+\usepackage{hyperref}
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={Luis Quesada Torres},
+pdfcreator={},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks,
+colorlinks=true,
+linkcolor=blue,
+citecolor=blue,
+filecolor=blue,
+urlcolor=blue
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\begin{body}
+
+\raggedleft\roundpic{1.85cm}{1.85cm}{pic.jpg}
+&
+\vspace{-2.45cm} \par
+\huge{\textbf{Luis Quesada Torres}} \par
+\large{\textbf{Engineering Manager and Technical Lead}} \par
+\normalsize{\href{https://www.luisquesada.com}{www.luisquesada.com} \textemdash\ Contact via \href{https://www.linkedin.com/in/luisquesadatorres}{linkedin.com/in/luisquesadatorres}}
+% SIZEMARKER: Separation between header and content
+\vspace{0.1cm}
+
+%%%%%%%%%%%%%%%%
+%% EXPERIENCE %%
+%%%%%%%%%%%%%%%%
+
+\section{Industry}{Industry}{PDF:Industry}
+
+\textbf{Google}\newline
+\phantom{w}Rebuilt and grew four teams, each of them with an extraordinary team culture\newline
+\phantom{w}Trained four managers and five technical leads, mentored and coached tens of engineers\newline
+\phantom{w}Published texts on \href{https://landing.google.com/sre/workbook/chapters/overload/}{managing team overload} and \href{https://static.googleusercontent.com/media/sre.google/en//static/pdf/login_winter20_10_torres.pdf}{capacity management}\newline
+\phantom{w}Published tech talks on \href{https://youtu.be/dhTVVWzpc4Q}{Google production}, \href{https://youtu.be/d7nAGI_NZPk}{the Paxos algorithm}, and \href{https://youtu.be/pOo0oKNM9I8}{capacity management}\newline
+\phantom{w}Published an invention on \href{https://www.tdcommons.org/dpubs_series/4167/}{hardware for voxel-based 3D modeling}
+
+\SmallEntryGap
+
+\phantom{w}\textbf{Engineering Manager II}, Cloud Artificial Intelligence Solutions, Site Reliability Engineering\hfill \DatestampY{2020}--now\setlength{\dimen0}{\widthof{now}}\hspace{-\dimen0}\hphantom{\DatestampY{2000}} \newline
+\phantom{ww}Designed and led the development of a capacity management solution for 40+ products
+
+\SmallEntryGap
+
+\phantom{w}\textbf{Engineering Manager II}, Cloud Machine Learning, Site Reliability Engineering\hfill \DatestampY{2019}--\DatestampY{2020} \newline
+\phantom{ww}Partnered with NVIDIA to benchmark \href{https://cloud.google.com/blog/products/ai-machine-learning/your-ml-workloads-cheaper-and-faster-with-the-latest-gpus}{lower-cost faster artificial intelligence accelerators}
+
+\SmallEntryGap
+
+\phantom{w}\textbf{Engineering Manager}, Cloud Machine Learning, Site Reliability Engineering\hfill \DatestampY{2018}--\DatestampY{2019} \newline
+\phantom{ww}Improved the efficiency of artificial intelligence accelerators across 10 products
+
+\SmallEntryGap
+
+\phantom{w}\textbf{Technical Lead/Engineering Manager}, Hardware Operations, Site Reliability Engineering\hfill \DatestampY{2017}--\DatestampY{2018} \newline
+\phantom{ww}Sped up a critical worldwide datacenter infrastructure project by one year
+
+\SmallEntryGap
+
+\phantom{w}\textbf{Technical Lead}, Apps Storage, Site Reliability Engineering\hfill \DatestampY{2016}--\DatestampY{2017}\newline
+\phantom{ww}Led the development of solutions for automation, data integrity, and load balancing
+
+\SmallEntryGap
+
+\phantom{w}\textbf{Senior Software Engineer}, Apps Storage, Site Reliability Engineering\hfill \DatestampY{2015}--\DatestampY{2016}\newline
+\phantom{ww}Planned and executed time-sensitive production changes
+
+\SmallEntryGap
+
+\phantom{w}\textbf{Software Engineer III}, Apps Storage, Site Reliability Engineering\hfill \DatestampY{2014}--\DatestampY{2015}\newline
+\phantom{ww}Decreased the cost of a storage service with 700M+ users
+
+\SmallEntryGap
+
+\phantom{w}\textbf{Site Reliability Engineering Intern}, Apps Storage, Site Reliability Engineering\hfill \DatestampY{2014}--\DatestampY{2014}\newline
+\phantom{ww}Designed and implemented monitoring solutions on low-level storage system internals
+
+%%%%%%%%%%%%%%%
+%% STUDIES %%
+%%%%%%%%%%%%%%%
+
+\section{Academia}{Academia}{PDF:Academia}
+
+\textbf{University of Granada}\newline
+\phantom{w}\textbf{Fellowship} on \href{https://github.com/lquesada/ModelCC}{parsers} and \href{https://github.com/lquesada/MotionTracking}{vision}, best \href{https://github.com/lquesada/ADAgio}{thesis} award as director\hfill \DatestampY{2010}--\DatestampY{2014} \newline
+\phantom{w}\textbf{MRes Soft Computing and Intelligent Systems.} GPA 9.3/10\hfill \DatestampY{2009}--\DatestampY{2010} \newline
+\phantom{w}\textbf{BSc Information Systems Engineering.} GPA 8.7/10, first of class\hfill \DatestampY{2009}--\DatestampY{2010} \newline
+\phantom{w}\textbf{MSc Computer Science.} GPA 9.2/10, first of class, national award, best \href{https://github.com/lquesada/JSimil}{thesis} award\hfill \DatestampY{2007}--\DatestampY{2009} \newline
+\phantom{w}\textbf{BSc Computer Systems Engineering.} GPA 8.7/10, first of class\hfill \DatestampY{2004}--\DatestampY{2007}
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\section{Interests}{Interests}{PDF:Interests}
+
+Developed videogame prototypes in \href{https://github.com/lquesada/LifoSource}{PHP}, \href{https://github.com/lquesada/SpaceARMy}{C}, \href{https://github.com/lquesada/RogueCave}{Java}, \href{https://github.com/lquesada/PhysicsEngine}{GameMaker}, and \href{https://github.com/lquesada/Cavernal}{Go} \newline
+Assembled a \href{https://github.com/lquesada/Lingvaro}{dictionary} cross Spanish, English, German, Esperanto, and Swiss German \newline
+Composed, recorded, and produced \href{https://elezeta.com}{several music albums}
+
+\end{body}
+
+\end{document}
