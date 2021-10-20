@@ -9,10 +9,10 @@ Check [resume.pdf](resume.pdf) for a compiled version.
 
 This resume is heavily based on (an old version of) the [https://github.com/zachscrivena/simple-resume-cv](SIMPLE-RESUME-CV) by zachscrivena, which is unlicensed.
 
-# What makes an awesome resume, in my humble opinoin?
+# What makes an awesome resume, in my humble opinion?
   - **Tailored to the intended audience and concrete position**. The same resume does not fit several positions
   - **Single page that is comfortable to read**. Examples of things that make a resume visually unappealing or hard to read are: only half a page, more than one page, font size smaller than 9, font size bigger than 11, half a page of margins, text to the brim of the page, Comic Sans typography, abuse of color, weird layout, nonsense use of sections, abusive nesting, grammar errors, or words in different languages than the main one used
-  - **Only the shiniest successes**. Your high school grades, those three degrees you abandoned before finishing the one you liked, that entry level job you had, or your low grade point average can read as failures
+  - **Only the shiniest achievements**. Your high school grades, those three degrees you abandoned before finishing the one you liked, that entry-level job you had, or your low grade point average can read as failures
   - **Emphasis on the skills, work, and impact rather than the roles**. Being CEO + Founder + CTO + Engineer at your company is worth nothing by itself
   - **Provide evidence of publications, or projects**. "4 out of 5 stars in Java coding" does not provide as good of an insight on your skills than actual code
   - **Correct amount of personal information**. Last updated date can help avoid misunderstandings, and a method to contact you is probably a good idea. It is not mandatory for a resume to contain pictures, date of birth, nationality, or marital status

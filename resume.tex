@@ -92,11 +92,12 @@ includefoot]{geometry}
 
 \newcommand{\DatestampY}[1]{#1}
 
+
 % Macro: body (rest of the document).
 % SIZEMARKER: Left vs. right columns
 \newenvironment{body}
 {\par\par
-\begin{longtable}{p{0.125\textwidth}p{0.84\textwidth}}}
+\begin{longtable}{p{0.145\textwidth}p{0.81\textwidth}}}
 {\par\end{longtable}\par}
 
 % Macro: section (new section for Education, Research Experience, etc.).
@@ -126,7 +127,7 @@ path picture = {
 
 
 % CV Info (to be customized).
-\newcommand{\CVTitle}{Luis Quesada Torres}
+\newcommand{\CVTitle}{Luis Quesada Torres - Resume}
 \newcommand{\CVNote}{CV compiled on {\today}}
 
 % PDF settings and properties.
@@ -164,78 +165,56 @@ urlcolor=blue
 % TITLE BLOCK %
 %%%%%%%%%%%%%%%
 
-\begin{body}
-
-\raggedleft\roundpic{1.85cm}{1.85cm}{pic.jpg}
+\begin{center}\begin{longtable}{p{0.245\textwidth}p{0.62\textwidth}}
+\raggedleft\roundpic{3.5cm}{3.5cm}{pic.jpg}\hspace{0.3cm}
 &
-\vspace{-2.45cm} \par
-\huge{\textbf{Luis Quesada Torres}} \par
-\large{\textbf{Engineering Manager and Technical Lead}} \par
-\normalsize{\href{https://www.luisquesada.com}{www.luisquesada.com} \textemdash\ Contact via \href{https://www.linkedin.com/in/luisquesadatorres}{linkedin.com/in/luisquesadatorres}}
-% SIZEMARKER: Separation between header and content
-\vspace{0.1cm}
+\vspace{-3.55cm} \par
+\huge{\textbf{Luis Quesada\hspace{-0.09cm} Torres}} \par
+\large{\textbf{Senior Engineering Manager}} \par
+\normalsize{\href{https://www.luisquesada.com}{www.luisquesada.com}} \par
+\normalsize{Contact via \href{https://www.linkedin.com/in/luisquesadatorres}{linkedin.com/in/luisquesadatorres}}
+
+\end{longtable}\end{center}
+
+\vspace{-1.2cm}
+
+
+
+\begin{body}
 
 %%%%%%%%%%%%%%%%
 %% EXPERIENCE %%
 %%%%%%%%%%%%%%%%
 
-\section{Industry}{Industry}{PDF:Industry}
+\section{Experience}{Experience}{PDF:Experience}
 
-\textbf{Google}\newline
-\phantom{w}Rebuilt and grew four teams, each of them with an extraordinary team culture\newline
-\phantom{w}Trained four managers and five technical leads, mentored and coached tens of engineers\newline
-\phantom{w}Published texts on \href{https://landing.google.com/sre/workbook/chapters/overload/}{managing team overload} and \href{https://static.googleusercontent.com/media/sre.google/en//static/pdf/login_winter20_10_torres.pdf}{capacity management}\newline
-\phantom{w}Published tech talks on \href{https://youtu.be/dhTVVWzpc4Q}{Google production}, \href{https://youtu.be/d7nAGI_NZPk}{the Paxos algorithm}, and \href{https://youtu.be/pOo0oKNM9I8}{capacity management}\newline
-\phantom{w}Published an invention on \href{https://www.tdcommons.org/dpubs_series/4167/}{hardware for voxel-based 3D modeling}
-
-\SmallEntryGap
-
-\phantom{w}\textbf{Engineering Manager II}, Cloud Artificial Intelligence Solutions, Site Reliability Engineering\hfill \DatestampY{2020}--now\setlength{\dimen0}{\widthof{now}}\hspace{-\dimen0}\hphantom{\DatestampY{2000}} \newline
-\phantom{ww}Designed and led the development of a capacity management solution for 40+ products
-
-\SmallEntryGap
-
-\phantom{w}\textbf{Engineering Manager II}, Cloud Machine Learning, Site Reliability Engineering\hfill \DatestampY{2019}--\DatestampY{2020} \newline
-\phantom{ww}Partnered with NVIDIA to benchmark \href{https://cloud.google.com/blog/products/ai-machine-learning/your-ml-workloads-cheaper-and-faster-with-the-latest-gpus}{lower-cost faster artificial intelligence accelerators}
-
-\SmallEntryGap
-
-\phantom{w}\textbf{Engineering Manager}, Cloud Machine Learning, Site Reliability Engineering\hfill \DatestampY{2018}--\DatestampY{2019} \newline
-\phantom{ww}Improved the efficiency of artificial intelligence accelerators across 10 products
-
-\SmallEntryGap
-
-\phantom{w}\textbf{Technical Lead/Engineering Manager}, Hardware Operations, Site Reliability Engineering\hfill \DatestampY{2017}--\DatestampY{2018} \newline
-\phantom{ww}Sped up a critical worldwide datacenter infrastructure project by one year
-
-\SmallEntryGap
-
-\phantom{w}\textbf{Technical Lead}, Apps Storage, Site Reliability Engineering\hfill \DatestampY{2016}--\DatestampY{2017}\newline
-\phantom{ww}Led the development of solutions for automation, data integrity, and load balancing
-
-\SmallEntryGap
-
-\phantom{w}\textbf{Senior Software Engineer}, Apps Storage, Site Reliability Engineering\hfill \DatestampY{2015}--\DatestampY{2016}\newline
-\phantom{ww}Planned and executed time-sensitive production changes
-
-\SmallEntryGap
-
-\phantom{w}\textbf{Software Engineer III}, Apps Storage, Site Reliability Engineering\hfill \DatestampY{2014}--\DatestampY{2015}\newline
-\phantom{ww}Decreased the cost of a storage service with 700M+ users
-
-\SmallEntryGap
-
-\phantom{w}\textbf{Site Reliability Engineering Intern}, Apps Storage, Site Reliability Engineering\hfill \DatestampY{2014}--\DatestampY{2014}\newline
-\phantom{ww}Designed and implemented monitoring solutions on low-level storage system internals
+\textbf{Google} \textemdash{ }\textbf{Site Reliability Engineering}\newline
+\phantom{ww}\textbf{Senior Engineering Manager}, Cloud Artificial Intelligence and Industry Solutions\hfill \DatestampY{2021}--\hspace{0.057cm}now\hspace{0.057cm} \newline
+\phantom{ww}\textbf{Engineering Manager II}, Cloud Artificial Intelligence and Industry Solutions\hfill \DatestampY{2020}--\DatestampY{2021} \newline
+\phantom{ww}\textbf{Engineering Manager II}, Cloud Machine Learning\hfill \DatestampY{2019}--\DatestampY{2020} \newline
+\phantom{ww}\textbf{Engineering Manager}, Cloud Machine Learning\hfill \DatestampY{2018}--\DatestampY{2019} \newline
+\phantom{ww}\textbf{Technical Lead/Engineering Manager}, Hardware Operations\hfill \DatestampY{2017}--\DatestampY{2018} \newline
+\phantom{ww}\textbf{Technical Lead}, Apps Storage\hfill \DatestampY{2016}--\DatestampY{2017}\newline
+\phantom{ww}\textbf{Senior Software Engineer}, Apps Storage\hfill \DatestampY{2015}--\DatestampY{2016}\newline
+\phantom{ww}\textbf{Software Engineer III}, Apps Storage\hfill \DatestampY{2014}--\DatestampY{2015}\newline
+\phantom{ww}\textbf{Software Engineering Intern}, Apps Storage\hfill \DatestampY{2014}--\DatestampY{2014} \newline
+\phantom{w}Rebuilt four teams with a great team culture and excellent performance\newline
+\phantom{w}Drove efforts for convergence of technical infrastructure and production setup\newline
+\phantom{w}Led capacity management and efficiency programs\newline
+\phantom{w}Owned reliability, data integrity, security, and privacy efforts\newline
+\phantom{w}Managed incident response and performed time-critical operations\newline
+\phantom{w}Partnered with NVIDIA to benchmark \href{https://cloud.google.com/blog/products/ai-machine-learning/your-ml-workloads-cheaper-and-faster-with-the-latest-gpus}{lower-cost faster artificial intelligence accelerators}\newline
+\phantom{w}Published articles on \href{https://landing.google.com/sre/workbook/chapters/overload/}{managing team overload} and \href{https://static.googleusercontent.com/media/sre.google/en//static/pdf/login_winter20_10_torres.pdf}{capacity management}\newline
+\phantom{w}Published talks on \href{https://youtu.be/dhTVVWzpc4Q}{Google production}, \href{https://youtu.be/d7nAGI_NZPk}{the Paxos algorithm}, and \href{https://youtu.be/pOo0oKNM9I8}{capacity management}
 
 %%%%%%%%%%%%%%%
 %% STUDIES %%
 %%%%%%%%%%%%%%%
 
-\section{Academia}{Academia}{PDF:Academia}
+\section{Studies}{Studies}{PDF:Studies}
 
 \textbf{University of Granada}\newline
-\phantom{w}\textbf{Fellowship.} Researched on \href{https://github.com/lquesada/ModelCC}{parsers} and \href{https://github.com/lquesada/MotionTracking}{vision}, best thesis award as director of \href{https://github.com/lquesada/ADAgio}{MSc thesis}\hfill \DatestampY{2010}--\DatestampY{2014} \newline
+\phantom{w}\textbf{Fellowship.} Researched on \href{https://github.com/lquesada/ModelCC}{parsers} and \href{https://github.com/lquesada/MotionTracking}{vision}, best \href{https://github.com/lquesada/ADAgio}{thesis} award as thesis director\hfill \DatestampY{2010}--\DatestampY{2014} \newline
 \phantom{w}\textbf{MRes Soft Computing and Intelligent Systems.} GPA 9.3/10\hfill \DatestampY{2009}--\DatestampY{2010} \newline
 \phantom{w}\textbf{BSc Information Systems Engineering.} GPA 8.7/10, first of class\hfill \DatestampY{2009}--\DatestampY{2010} \newline
 \phantom{w}\textbf{MSc Computer Science.} GPA 9.2/10, first of class, national award, best \href{https://github.com/lquesada/JSimil}{thesis} award\hfill \DatestampY{2007}--\DatestampY{2009} \newline
@@ -247,9 +226,9 @@ urlcolor=blue
 
 \section{Interests}{Interests}{PDF:Interests}
 
-Developed videogame prototypes in \href{https://cavernal.com/}{TypeScript/JavaScript}, \href{https://github.com/lquesada/LifoSource}{PHP}, \href{https://github.com/lquesada/SpaceARMy}{C}, \href{https://github.com/lquesada/RogueCave}{Java}, \href{https://github.com/lquesada/PhysicsEngine}{GameMaker}, and \href{https://github.com/lquesada/CaveExplorer}{Go} \newline
-Assembled a \href{https://github.com/lquesada/Lingvaro}{dictionary} cross Spanish, English, German, Esperanto, and Swiss German \newline
-Composed, recorded, and produced \href{https://elezeta.com}{several music albums}
+Videogames: Developed prototypes in \href{https://cavernal.com/}{JavaScript}, \href{https://github.com/lquesada/LifoSource}{PHP}, \href{https://github.com/lquesada/SpaceARMy}{C}, \href{https://github.com/lquesada/RogueCave}{Java}, \href{https://github.com/lquesada/PhysicsEngine}{GameMaker}, and \href{https://github.com/lquesada/CaveExplorer}{Go} \newline
+Languages: Assembled a \href{https://github.com/lquesada/Lingvaro}{dictionary} cross Spanish-English-German-Swiss German-Esperanto\newline
+Music: Composed, recorded, and produced \href{https://elezeta.com}{several music albums}
 
 \end{body}
 
