@@ -2,7 +2,7 @@
 xelatex resume.tex
 ADD=$(cat << EOM | tr -d '\n'
 <title>Luis Quesada Torres - Resume<\\/title>
-<link rel="shortcut icon" type="image\\/png" href="\\/favicon.png"\\/>
+<link rel="shortcut icon" type="image\\/png" href="\\favicon.png"\\/>
 EOM
 )
 
