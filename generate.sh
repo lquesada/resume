@@ -1,7 +1,7 @@
 #!/bin/bash
 xelatex resume.tex
 ADD=$(cat << EOM | tr -d '\n'
-<title>Luis Quesada Torres - Resume<\\/title>
+<title>Luis Quesada - Resume<\\/title>
 <link rel="shortcut icon" type="image\\/png" href="favicon.png"\\/>
 EOM
 )
