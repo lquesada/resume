@@ -5,10 +5,10 @@
 %% Resume template - https://github.com/lquesada/resume
 %% Check that URL for licensing information.
 %% 
-%% Copyright (c) 2022, Luis Quesada -
+%% Copyright (c) 2024, Luis Quesada -
 %% https://github.com/lquesada | www.luisquesada.com
 %%
-%% Heavily based of (and old version of) the SIMPLE-RESUME-CV
+%% Heavily based of (an old version of) the SIMPLE-RESUME-CV
 %% by zachscrivena.
 %% <https://github.com/zachscrivena/simple-resume-cv>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,6 +92,9 @@ includefoot]{geometry}
 
 \newcommand{\DatestampY}[1]{#1}
 
+% SIZEMARKER: Item spacing
+\newcommand{\itemspacing}{\vspace{0.16cm}}
+
 
 % Macro: body (rest of the document).
 % SIZEMARKER: Left vs. right columns
@@ -102,7 +105,7 @@ includefoot]{geometry}
 
 % Macro: section (new section for Education, Research Experience, etc.).
 % SIZEMARKER: The separation here is between sections.
-\renewcommand{\section}[3]{\\[-0.7cm]\pdfbookmark[2]{#2}{#3}\\%
+\renewcommand{\section}[3]{\\[-0.9cm]\pdfbookmark[2]{#2}{#3}\\%
 \raggedleft  %align to the right
 {\fontsize{9.5pt}{9.5pt}\selectfont\bfseries\raggedright%
 \MakeUppercase{#1}}&}
@@ -166,9 +169,9 @@ urlcolor=blue
 %%%%%%%%%%%%%%%
 
 \begin{center}\begin{longtable}{p{0.245\textwidth}p{0.62\textwidth}}
-\raggedleft\roundpic{3.5cm}{3.5cm}{pic.jpg}\hspace{0.3cm}
+\raggedleft\roundpic{3cm}{3cm}{pic.jpg}\hspace{0.3cm}
 &
-\vspace{-3.55cm} \par
+\vspace{-3.28cm} \par
 \huge{\textbf{Luis Quesada}} \par
 \large{\textbf{Senior Engineering Manager}} \par
 \normalsize{\href{https://lquesada.github.io/resume/}{www.luisquesada.com}} \par
@@ -176,11 +179,45 @@ urlcolor=blue
 
 \end{longtable}\end{center}
 
-\vspace{-1.2cm}
+\vspace{-1.6cm} % SIZEMARKER
+
+\newenvironment{comp}
+{
+\vspace{-\baselineskip/2}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\partopsep}{0pt}
+\setlength{\topsep}{0pt}
+}
+{
+\end{itemize}
+\vspace{-\baselineskip/2}
+}
 
 
 
 \begin{body}
+
+%%%%%%%%%%%%%%%
+%%  SUMMARY  %%
+%%%%%%%%%%%%%%%
+
+\section{Summary}{Summary}{PDF:Summary}
+
+25+ years of coding experience, 10+ years of industry experience, and 6+ years of management experience.
+Technical expertise in distributed systems and user-facing products, strategic vision, and can-do attitude.
+I drive fast, impactful solutions, tackling complex problems with wide consensus and innovation.
+
+%%%%%%%%%%%%%%%
+%%  SKILLS   %%
+%%%%%%%%%%%%%%%
+\section{Skills}{Skills}{PDF:Skills}
+Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and Esperanto (B1)\newline
+Systems: Architecture, performance, automation, monitoring, load balancing, capacity, and data integrity\newline
+Computer Languages: Go, Java, Python, TypeScript, PHP, shell script, and SQL\newline
+People: Organization design, career development, team health, coaching, presentation, and negotiation
 
 %%%%%%%%%%%%%%%%
 %% EXPERIENCE %%
@@ -188,51 +225,123 @@ urlcolor=blue
 
 \section{Experience}{Experience}{PDF:Experience}
 
-\textbf{Google} \textemdash{ }\textbf{YouTube}\newline
-\phantom{w}\textbf{Senior Engineering Manager}, Infrastructure\hfill \DatestampY{2022}--\hspace{0.057cm}now\hspace{0.057cm} \newline
-\phantom{ww}Improved performance of internal pipelines by 40x \newline
-\phantom{ww}Expanded product to cover new critical user journeys \newline
-\phantom{ww}Landed a large set of features as time-critical response to incidents
-\vspace{0.17cm}
+\textbf{Google} \textemdash{ }\textbf{YouTube Infrastructure, Software Engineering} | \DatestampY{2022}--\hspace{0.057cm}now\hspace{0.057cm} \newline
+\textit{Senior Engineering Manager (L7)}
+\begin{comp}
+\item Improved the performance of high-throughput internal pipelines with hundreds of dependencies by 100x and the overall user-facing latency by 30x
+\item Extended the power of expression of an internal system with generic solutions that cover new critical user journeys with zero additional engineering investment
+\end{comp}
+\itemspacing
 
-\textbf{Google} \textemdash{ }\textbf{Site Reliability Engineering}\newline
-\phantom{w}\textbf{Senior Engineering Manager}, Cloud Artificial Intelligence Solutions\hfill \DatestampY{2021}--\DatestampY{2022} \newline
-\phantom{w}\textbf{Engineering Manager II}, Cloud Artificial Intelligence Solutions\hfill \DatestampY{2020}--\DatestampY{2021} \newline
-\phantom{w}\textbf{Engineering Manager II}, Cloud Machine Learning\hfill \DatestampY{2019}--\DatestampY{2020} \newline
-\phantom{w}\textbf{Engineering Manager}, Cloud Machine Learning\hfill \DatestampY{2018}--\DatestampY{2019} \newline
-\phantom{w}\textbf{Technical Lead/Engineering Manager}, Hardware Operations\hfill \DatestampY{2017}--\DatestampY{2018} \newline
-\phantom{w}\textbf{Technical Lead}, Apps Storage\hfill \DatestampY{2016}--\DatestampY{2017}\newline
-\phantom{w}\textbf{Senior Software Engineer}, Apps Storage\hfill \DatestampY{2015}--\DatestampY{2016}\newline
-\phantom{w}\textbf{Software Engineer III}, Apps Storage\hfill \DatestampY{2014}--\DatestampY{2015}\newline
-\phantom{w}\textbf{Software Engineering Intern}, Apps Storage\hfill \DatestampY{2014}--\DatestampY{2014} \newline
-\phantom{ww}Rebuilt five teams with a great team culture and excellent performance\newline
-\phantom{ww}Led efforts on convergence, reliability, ef\hspace{0cm}ficiency, and data integrity across >1k engineers\newline
-\phantom{ww}Managed incident response and performed time-critical operations\newline
-\phantom{ww}Published articles on \href{https://landing.google.com/sre/workbook/chapters/overload/}{managing team overload} and \href{https://static.googleusercontent.com/media/sre.google/en//static/pdf/login_winter20_10_torres.pdf}{capacity management}\newline
-\phantom{ww}Published talks on \href{https://youtu.be/dhTVVWzpc4Q}{Google production}, \href{https://youtu.be/d7nAGI_NZPk}{the Paxos algorithm}, and \href{https://youtu.be/pOo0oKNM9I8}{capacity management}
+\textbf{Google} \textemdash{ }\textbf{Cloud Artificial Intelligence, Site Reliability Engineering} | \DatestampY{2018}--\DatestampY{2022} \newline
+\textit{Engineering Manager (L5) $\rightarrow$ Engineering Manager II (L6) $\rightarrow$ Senior Engineering Manager (L7)}
+\begin{comp}
+\item Redefined five production areas across >1k engineers: capacity management, monitoring, rollouts, data integrity, and frameworks\newline
+Awards:\hspace{0.1cm}2x Tech Debt Buster, Perfy, Cloud Tech Impact, Core Tech Impact, and Google Tech Impact
+\item Productionized three large Cloud Artificial Intelligence products, enabled the safe onboarding of preview customers and the general availability launch
+\end{comp}
+\itemspacing
+
+\textbf{Google} \textemdash{ }\textbf{Datacenter Software, Site Reliability Engineering} | \DatestampY{2017}--\DatestampY{2018} \newline
+\textit{Technical Leader/Engineering Manager (L5)}
+\begin{comp}
+\item Sped up efforts to revamp critical datacenter systems and landed them one year ahead of time
+\end{comp}
+\itemspacing
+
+\textbf{Google} \textemdash{ }\textbf{Apps Storage, Site Reliability Engineering} | \DatestampY{2014}--\DatestampY{2017} \newline
+\textit{Intern $\rightarrow$ Software Engineer (L4) $\rightarrow$ Senior Software Engineer (L5) $\rightarrow$ Technical Leader (L5)}
+\begin{comp}
+\item Developed capacity management models for products with >1B users and saved significant resources
+\item Planned and executed time-critical deeply technical and risky operations with zero downtime\newline
+Awards:\hspace{0.1cm}Feats of Engineering
+\end{comp}
+\itemspacing
+
+\textbf{Universidad de Granada, Spain} \textemdash{ }\textbf{Computer Science and Artificial Intelligence} | \DatestampY{2010}--\DatestampY{2014} \newline
+\textit{Fellow on University Teaching Training}
+\begin{comp}
+\item Researched on \href{https://github.com/lquesada/ModelCC}{model-based parsers} and \href{https://github.com/lquesada/MotionTracking}{3D motion tracking}
+\item Directed a Master Thesis on \href{https://github.com/lquesada/ADAgio}{music-prototyping languages} and obtained a Best Thesis award
+\end{comp}
 
 %%%%%%%%%%%%%%%
-%% STUDIES %%
+%%  STUDIES  %%
 %%%%%%%%%%%%%%%
-
 \section{Studies}{Studies}{PDF:Studies}
 
-\textbf{University of Granada}\newline
-\phantom{w}\textbf{Fellowship.} Researched on \href{https://github.com/lquesada/ModelCC}{parsers} and \href{https://github.com/lquesada/MotionTracking}{computer vision}, best \href{https://github.com/lquesada/ADAgio}{thesis} award as director\hfill \DatestampY{2010}--\DatestampY{2014} \newline
-\phantom{w}\textbf{MRes Soft Computing and Intelligent Systems.} GPA 9.3/10\hfill \DatestampY{2009}--\DatestampY{2010} \newline
-\phantom{w}\textbf{BSc Information Systems Engineering.} GPA 8.7/10, first of class\hfill \DatestampY{2009}--\DatestampY{2010} \newline
-\phantom{w}\textbf{MSc Computer Science.} GPA 9.2/10, first of class, national and best \href{https://github.com/lquesada/JSimil}{thesis} awards\hfill \DatestampY{2007}--\DatestampY{2009} \newline
-\phantom{w}\textbf{BSc Computer Systems Engineering.} GPA 8.7/10, first of class\hfill \DatestampY{2004}--\DatestampY{2007}
+\textbf{Master in Research, Soft Computing and Intelligent Systems} \hspace{-0.03cm}\textemdash{ }\hspace{-0.03cm}University of Granada \hspace{-0.04cm}| \hspace{-0.04cm}\DatestampY{2009}--\DatestampY{2010}
+\begin{comp}
+\item Finished thesis on \href{https://github.com/lquesada/ModelCC/tree/master/ModelCC/src/org/modelcc/lexer}{lexical analyzers} and \href{https://github.com/lquesada/ModelCC/tree/master/ModelCC/src/org/modelcc/parser}{parsers} with ambiguity support
+\item Average grade 9.3 out of 10
+\end{comp}
+\itemspacing
 
-%%%%%%%%%%%%%%%
-%% INTERESTS %%
-%%%%%%%%%%%%%%%
+\textbf{Bachelor of Science, Information Systems Engineering} \textemdash{ }University of Granada | \DatestampY{2009}--\DatestampY{2010}
+\begin{comp}
+\item Average grade 8.7 out of 10
+\item First of class award
+\end{comp}
 
-\section{Interests}{Interests}{PDF:Interests}
+\itemspacing
+\textbf{Master of Science, Computer Science} \textemdash{ }University of Granada | \DatestampY{2007}--\DatestampY{2009}
+\begin{comp}
+\item Finished thesis on \href{https://github.com/lquesada/JSimil}{Java bytecode-level similarity detection} and obtained a Best Thesis Award 
+\item Average grade 9.2 out of 10
+\item First of class award
+\item National award to the academic excellence
+\item Honorary diploma of the Technical School of Computer Engineering and Telecommunications
+\end{comp}
+\itemspacing
 
-Videogames: Developed prototypes in \href{https://cavernal.github.io/cavernal}{JavaScript}, \href{https://github.com/lquesada/LifoSource}{PHP}, \href{https://github.com/lquesada/SpaceARMy}{C}, \href{https://github.com/lquesada/RogueCave}{Java}, \href{https://github.com/lquesada/PhysicsEngine}{GameMaker}, and \href{https://github.com/lquesada/CaveExplorer}{Go} \newline
-Languages: Assembled a \href{https://github.com/lquesada/Lingvaro}{cross-5-lingual dictionary}, wrote \href{https://beacons.ai/milibrode}{Spanish first readers books}\newline
-Music: Composed, performed, and produced \href{https://open.spotify.com/artist/3RPEdOJGGdk3kOnmVq3dgX}{music albums} across various genres
+\textbf{Bachelor of Science, Computer Systems Engineering} \textemdash{ }University of Granada | \DatestampY{2004}--\DatestampY{2007}
+\begin{comp}
+\item Average grade 8.7 out of 10
+\item First of class award
+\end{comp}
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+\section{Publications}{Publications}{PDF:Publications}
+\textbf{Team Management}
+\begin{comp}
+\item Published a \href{https://landing.google.com/sre/workbook/chapters/overload/}{book chapter} on managing team overload
+\end{comp}
+\itemspacing
+
+\textbf{Distributed Systems}
+\begin{comp}
+\item Published a \href{https://youtu.be/pOo0oKNM9I8}{tech talk} and an \href{https://static.googleusercontent.com/media/sre.google/en//static/pdf/login_winter20_10_torres.pdf}{article} on capacity management
+\item Published a \href{https://youtu.be/dhTVVWzpc4Q}{tech talk} on Google's production environment
+\item Published a \href{https://youtu.be/d7nAGI_NZPk}{tech talk} on the Paxos algorithm
+\end{comp}
+\itemspacing
+
+\textbf{Videogame Development}
+\begin{comp}
+\item Developed a \href{https://cavernal.github.io/cavernal}{rogue-like videogame} in JavaScript with no frameworks
+\item Developed a \href{https://github.com/lquesada/LifoSource}{web-based multiplayer videogame} in PHP+MySQL, with 10K+ players in the '00s
+\item Developed a \href{https://github.com/lquesada/SpaceARMy}{shooter videogame} in C for the Game Boy Advance console
+\item Developed a \href{https://github.com/lquesada/RogueCave}{dungeon videogame prototype} in Java with custom physics and graphic engines
+\item Developed a \href{https://github.com/lquesada/PhysicsEngine}{physics engine and basic taxonomy} in GameMaker
+\item Developed a \href{https://github.com/lquesada/CaveExplorer}{dungeon videogame prototype} in Go with custom physics and inventory engines 
+\end{comp}
+\itemspacing
+
+\textbf{Language Learning}
+\begin{comp}
+\item Published three \href{https://beacons.ai/milibrode}{Spanish short story books for children}
+\item Published a \href{https://github.com/lquesada/Lingvaro}{dictionary across 5 languages}
+\end{comp}
+\itemspacing
+
+\textbf{Music Production}
+\begin{comp}
+\item Published an \href{https://open.spotify.com/album/3JIpCmtM3DP1ehxE80Ufeg}{indie alt-rock} album, \href{https://open.spotify.com/album/3wqaFP9BL2MGaSigExavsM}{one} and \href{https://open.spotify.com/album/6Im0Un3txvscirw0RBhZ7y}{two} synth albums, and \href{https://open.spotify.com/album/36yE0PeGFyDJtl4T127Bko}{one} and \href{https://open.spotify.com/album/3TsZ2szcmFKWJ67yGMMwUJ}{two} piano albums
+\end{comp}
+\itemspacing
+
 
 \end{body}
 
