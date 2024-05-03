@@ -95,6 +95,9 @@ includefoot]{geometry}
 % SIZEMARKER: Item spacing
 \newcommand{\itemspacing}{\vspace{0.16cm}}
 
+% SIZEMARKER: Item spacing for second page
+\newcommand{\itemspacingtwo}{\vspace{0.22cm}}
+
 
 % Macro: body (rest of the document).
 % SIZEMARKER: Left vs. right columns
@@ -105,7 +108,7 @@ includefoot]{geometry}
 
 % Macro: section (new section for Education, Research Experience, etc.).
 % SIZEMARKER: The separation here is between sections.
-\renewcommand{\section}[3]{\\[-0.9cm]\pdfbookmark[2]{#2}{#3}\\%
+\renewcommand{\section}[3]{\\[-0.6cm]\pdfbookmark[2]{#2}{#3}\\%
 \raggedleft  %align to the right
 {\fontsize{9.5pt}{9.5pt}\selectfont\bfseries\raggedright%
 \MakeUppercase{#1}}&}
@@ -278,7 +281,7 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 \begin{comp}
 \item Published a \href{https://landing.google.com/sre/workbook/chapters/overload/}{book chapter} on managing team overload
 \end{comp}
-\itemspacing
+\itemspacingtwo
 
 \textbf{Distributed Systems}
 \begin{comp}
@@ -286,13 +289,13 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 \item Published a \href{https://youtu.be/dhTVVWzpc4Q}{tech talk} on Google's production environment
 \item Published a \href{https://youtu.be/d7nAGI_NZPk}{tech talk} on the Paxos algorithm
 \end{comp}
-\itemspacing
+\itemspacingtwo
 
 \textbf{Generative Artificial Intelligence}
 \begin{comp}
 \item Developed \href{https://github.com/lquesada/ComfyUI-Prompt-Combinator}{nodes} and \href{https://github.com/lquesada/ComfyUI-Starter-Workflows}{workflows} for the Stable Diffusion ComfyUI tool
 \end{comp}
-\itemspacing
+\itemspacingtwo
 
 \textbf{Videogame Development}
 \begin{comp}
@@ -303,7 +306,7 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 \item Developed a \href{https://github.com/lquesada/PhysicsEngine}{physics engine and basic taxonomy} in GameMaker
 \item Developed a \href{https://github.com/lquesada/CaveExplorer}{dungeon videogame prototype} in Go with custom physics and inventory engines
 \end{comp}
-\itemspacing
+\itemspacingtwo
 
 \textbf{Programming Languages}
 \begin{comp}
@@ -311,27 +314,25 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 \item Designed a \href{https://github.com/lquesada/ADAgio}{domain-specific language for music prototyping}
 \item Developed a \href{https://github.com/lquesada/JSimil}{Java bytecode similarity detector}
 \end{comp}
-\itemspacing
+\itemspacingtwo
 
 \textbf{Computer Vision}
 \begin{comp}
 \item Developed a \href{https://github.com/lquesada/MotionTracking}{3D motion tracking solution that works on a single camera}
 \end{comp}
-\itemspacing
+\itemspacingtwo
 
 \textbf{Language Learning Resources}
 \begin{comp}
 \item Published three \href{https://beacons.ai/milibrode}{Spanish short story books for children}
 \item Published a \href{https://github.com/lquesada/Lingvaro}{dictionary across five languages}
 \end{comp}
-\itemspacing
+\itemspacingtwo
 
 \textbf{Music}
 \begin{comp}
 \item Published an \href{https://open.spotify.com/album/3JIpCmtM3DP1ehxE80Ufeg}{indie alt-rock} album, \href{https://open.spotify.com/album/3wqaFP9BL2MGaSigExavsM}{one} and \href{https://open.spotify.com/album/6Im0Un3txvscirw0RBhZ7y}{two} synth albums, and \href{https://open.spotify.com/album/36yE0PeGFyDJtl4T127Bko}{one} and \href{https://open.spotify.com/album/3TsZ2szcmFKWJ67yGMMwUJ}{two} piano albums
 \end{comp}
-\itemspacing
-
 
 \end{body}
 
