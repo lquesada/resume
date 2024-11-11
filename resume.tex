@@ -93,7 +93,7 @@ includefoot]{geometry}
 \newcommand{\DatestampY}[1]{#1}
 
 % SIZEMARKER: Item spacing
-\newcommand{\itemspacing}{\vspace{0.16cm}}
+\newcommand{\itemspacing}{\vspace{0.12cm}}
 
 % SIZEMARKER: Item spacing for second page
 \newcommand{\itemspacingtwo}{\vspace{0.22cm}}
@@ -108,7 +108,7 @@ includefoot]{geometry}
 
 % Macro: section (new section for Education, Research Experience, etc.).
 % SIZEMARKER: The separation here is between sections.
-\renewcommand{\section}[3]{\\[-1.2cm]\pdfbookmark[2]{#2}{#3}\\%
+\renewcommand{\section}[3]{\\[-1.1cm]\pdfbookmark[2]{#2}{#3}\\%
 \raggedleft  %align to the right
 {\fontsize{9.5pt}{9.5pt}\selectfont\bfseries\raggedright%
 \MakeUppercase{#1}}&}
@@ -172,9 +172,9 @@ urlcolor=blue
 %%%%%%%%%%%%%%%
 
 \begin{center}\begin{longtable}{p{0.245\textwidth}p{0.62\textwidth}}
-\raggedleft\roundpic{3cm}{3cm}{pic.jpg}\hspace{0.3cm}
+\raggedleft\roundpic{3.7cm}{3.7cm}{pic.jpg}\hspace{0.3cm} % SIZEMARKER
 &
-\vspace{-2.68cm} \par
+\vspace{-2.93cm} \par
 \huge{\textbf{Luis Quesada}} \par
 \large{\textbf{Senior Engineering Manager}} \par
 \normalsize{\href{https://lquesada.github.io/resume/}{www.luisquesada.com}} \par
@@ -182,7 +182,7 @@ urlcolor=blue
 
 \end{longtable}\end{center}
 
-\vspace{-1.6cm} % SIZEMARKER
+\vspace{-1.2cm} % SIZEMARKER
 
 \newenvironment{comp}
 {
@@ -209,7 +209,7 @@ urlcolor=blue
 
 \section{Summary}{Summary}{PDF:Summary}
 
-25+ years coding, 20+ years managing systems, 10+ years in industry, and 6+ years managing people.
+26+ years coding, 21+ years managing systems, 11+ years in industry, and 7+ years managing people.
 Technical expertise in distributed systems and user-facing products, strategic vision, and can-do attitude.
 I drive fast, impactful solutions, tackling complex problems with wide consensus and innovation.
 
@@ -218,6 +218,7 @@ I drive fast, impactful solutions, tackling complex problems with wide consensus
 %%%%%%%%%%%%%%%
 \section{Skills}{Skills}{PDF:Skills}
 Systems: Architecture, performance, automation, monitoring, load balancing, capacity, and data integrity\newline
+Artificial Intelligence: Infrastructure and solutions using Generative Multi-modal Models\newline
 Computer Languages: Go, Java, Python, JavaScript, TypeScript, PHP, Bash shell script, and SQL\newline
 People: Organization design, career development, team health, coaching, presentation, and negotiation\newline
 Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and Esperanto (B1)
@@ -231,16 +232,15 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 \textbf{Google}, \DatestampY{2014} -- currently \newline
 \phantom{g}\textit{YouTube Infrastructure, Software Engineering} \textemdash{ }Engineering Manager (L7)
 \begin{comp}
-\item Improved the performance of high-throughput pipelines by 600x. \textbf{Award}: Performance Excellence
-\item Developed general features that expanded coverage to 10x more use cases with zero effort
-\item Leveraged Large Language Models (LLMs) to enhance system expressiveness and adaptability
-
+\item Improved the performance of high-throughput pipelines by 1000x. \textbf{Award}: Performance Excellence
+\item Productionized and applied Large Language Models to increase expresiveness of user-facing products
 \end{comp}
 \itemspacing
 
 \phantom{g}\textit{Cloud Artificial Intelligence, Site Reliability Engineering} \textemdash{ }Engineering Manager (L5 $\rightarrow$ L6 $\rightarrow$ L7)
 \begin{comp}
-\item Revamped five production areas across >1k engineers: capacity, monitoring, rollouts, data integrity, and frameworks. \textbf{Awards}: Cloud + Core + Google Tech Impact, Perfy, and 2x Tech Debt Buster
+\item Revamped capacity, monitoring, rollouts, data integrity, and frameworks across >1k engineers. \newline
+\textbf{Awards}: Cloud + Core + Google Tech Impact, Perfy, and 2x Tech Debt Buster
 \item Productionized three large Cloud Artificial Intelligence products and enabled their launch
 \end{comp}
 \itemspacing
