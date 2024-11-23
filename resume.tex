@@ -88,7 +88,7 @@ includefoot]{geometry}
 \setlength{\parindent}{0in}
 
 % SIZEMARKER: Line spacing
-\renewcommand{\baselinestretch}{1.35}
+\renewcommand{\baselinestretch}{1.23}
 
 \newcommand{\DatestampY}[1]{#1}
 
@@ -96,7 +96,7 @@ includefoot]{geometry}
 \newcommand{\itemspacing}{\vspace{0.12cm}}
 
 % SIZEMARKER: Item spacing for second page
-\newcommand{\itemspacingtwo}{\vspace{0.22cm}}
+\newcommand{\itemspacingtwo}{\vspace{0.1cm}}
 
 
 % Macro: body (rest of the document).
@@ -172,9 +172,9 @@ urlcolor=blue
 %%%%%%%%%%%%%%%
 
 \begin{center}\begin{longtable}{p{0.245\textwidth}p{0.62\textwidth}}
-\raggedleft\roundpic{3.7cm}{3.7cm}{pic.jpg}\hspace{0.3cm} % SIZEMARKER
+\raggedleft\roundpic{3.2cm}{3.2cm}{pic.jpg}\hspace{0.3cm} % SIZEMARKER
 &
-\vspace{-2.93cm} \par
+\vspace{-2.6cm} \par
 \huge{\textbf{Luis Quesada}} \par
 \large{\textbf{Senior Engineering Manager}} \par
 \normalsize{\href{https://lquesada.github.io/resume/}{www.luisquesada.com}} \par
@@ -182,7 +182,7 @@ urlcolor=blue
 
 \end{longtable}\end{center}
 
-\vspace{-1.2cm} % SIZEMARKER
+\vspace{-1.55cm} % SIZEMARKER
 
 \newenvironment{comp}
 {
@@ -213,16 +213,6 @@ urlcolor=blue
 Technical expertise in distributed systems and user-facing products, strategic vision, and can-do attitude\newline
 I drive fast, impactful solutions, tackling complex problems with wide consensus and innovation
 
-%%%%%%%%%%%%%%%
-%%  SKILLS   %%
-%%%%%%%%%%%%%%%
-\section{Skills}{Skills}{PDF:Skills}
-Systems: Architecture, performance, automation, monitoring, load balancing, capacity, and data integrity\newline
-Artificial Intelligence: Infrastructure and solutions, applied Generative Multi-modal Models\newline
-Computer Languages: Go, Java, Python, JavaScript, TypeScript, PHP, Bash shell script, and SQL\newline
-People: Organization design, career development, team health, coaching, presentation, and negotiation\newline
-Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and Esperanto (B1)
-
 %%%%%%%%%%%%%%%%
 %% EXPERIENCE %%
 %%%%%%%%%%%%%%%%
@@ -233,35 +223,37 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 \phantom{g}\textit{YouTube Infrastructure, Software Engineering} \textemdash{ }Senior Engineering Manager (L7)
 \begin{comp}
 \item Improved the performance of high-throughput pipelines by 1000x. \textbf{Award}: Performance Excellence
-\item Productionized and applied Large Language Models to increase the expresiveness of a product
+\item Productionized and applied Large Language Models to increase the expressiveness of a product
 \end{comp}
 \itemspacing
 
 \phantom{g}\textit{Cloud Artificial Intelligence, Site Reliability Engineering} \textemdash{ }Senior Engineering Manager (L5 $\rightarrow$ L7)
 \begin{comp}
-\item Revamped capacity, monitoring, rollouts, data integrity, and frameworks across >1k engineers. \newline
-\textbf{Awards}: Cloud + Core + Google Tech Impact, Perfy, and 2x Tech Debt Buster
-\item Productionized three large Cloud Artificial Intelligence products and enabled their launch
+\item Proposed to revamp capacity, monitoring, rollouts, data integrity, and frameworks across the entire developer organization, garnered top-down support and influenced the work of 50+ engineers to deploy the changes bottom-up, improving velocity and reliability on tens of products and >1K engineers. \textbf{Awards}: Cloud + Core + Google Tech Impact, Perfy, and 2x Tech Debt Buster
+\item Led the productionization of three large Cloud Artificial Intelligence products across reliability, scalability, security, and process requirements, and enabled their launch.
 \end{comp}
 \itemspacing
 
 \phantom{g}\textit{Datacenter Software, Site Reliability Engineering} \textemdash{ }Technical Leader/Engineering Manager (L5)
 \begin{comp}
-\item Sped up efforts to revamp critical datacenter systems and landed them one year ahead of time
+\item Took over a project to revamp critical datacenter systems and landed it one year ahead of time.
+\item Troubleshot and addressed incidents with company-wide impact as part of on-call responsibilities.
 \end{comp}
 \itemspacing
 
 \phantom{g}\textit{Apps Storage, Site Reliability Engineering} \textemdash{ }Technical Leader (L4 $\rightarrow$ L5)
 \begin{comp}
-\item Developed capacity management models for products with >1B users. \textbf{Award}:\hspace{0.1cm}Feats of Engineering
+\item Improved the availability and efficiency of a widely-used internal storage system by implementing an A/B-testing solution to detect regressions and integrating it in the rollout automation with push-on-green and alerting capabilities.
+\item Responsible for resource provisioning and capacity management for the storage backends of external facing products with >1B users. Developed, tested, and deployed a forecasting and provisioning model that led to significant resource savings and increased reliability. \textbf{Award}:\hspace{0.1cm}Feats of Engineering
+\item Responded to time-critical user-facing outages as part of deeply technical on-call responsibilities, and planned and performed high-risk high-complexity operations on live systems.
 \end{comp}
 \itemspacing
 
 \textbf{University of Granada}, \DatestampY{2010} -- \DatestampY{2014} \newline
 \phantom{g}\textit{Department of Computer Science and Artificial Intelligence} \textemdash{ }Fellow, University Lecturer in Training
 \begin{comp}
-\item Researched on model-based parsers and 3D motion tracking
-\item Directed a Master Thesis on music-prototyping languages. \textbf{Award}: Best Thesis
+\item Developed an on-the-fly compiler of compilers that produces lexical analyzers and parsers with ambiguity support from a hierarchy of Java classes and resolves lexical and syntactic ambiguities by applying syntactic constraints, semantic constraints, and probabilities. Researched its application to multilingual Natural Language Processing and to language prototyping. Directed a Master Thesis on a language for definition of music pieces. \textbf{Award}: Best Thesis (as thesis director)
+\item Developed an unsupervised markerless 3-degree-of-freedom real-time motion tracking heuristic technique that required a single low-budget camera.
 \end{comp}
 
 %%%%%%%%%%%%%%%
@@ -274,6 +266,16 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 \phantom{g}\textit{Bachelor of Science, Information Systems Engineering}. GPA 8.7/10. \textbf{Award}: First of Class\newline
 \phantom{g}\textit{Master of Science, Computer Science}. GPA 9.2/10. \textbf{Awards}: First of Class, National Award, Best Thesis\newline
 \phantom{g}\textit{Bachelor of Science, Computer Systems Engineering}. GPA 8.7/10. \textbf{Award}: First of Class
+
+%%%%%%%%%%%%%%%
+%%  SKILLS   %%
+%%%%%%%%%%%%%%%
+\section{Skills}{Skills}{PDF:Skills}
+Systems: Architecture, performance, automation, monitoring, load balancing, capacity, and data integrity\newline
+Artificial Intelligence: Infrastructure and solutions, applied Generative Multi-modal Models\newline
+Computer Languages: Go, Java, Python, JavaScript, TypeScript, PHP, Bash shell script, and SQL\newline
+People: Organization design, career development, team health, coaching, presentation, and negotiation\newline
+Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and Esperanto (B1)
 
 %%%%%%%%%%%%%%%%%%
 %% PUBLICATIONS %%
@@ -340,9 +342,7 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 
 \textbf{Music}
 \begin{comp}
-\item Produced indie rock albums: \href{https://open.spotify.com/album/1BspGnlv7cWS85sPZ4nfLr}{Crossing Lines} and \href{https://open.spotify.com/album/3JIpCmtM3DP1ehxE80Ufeg}{Years Away}
-\item Produced synthesizer albums: \href{https://open.spotify.com/album/3wqaFP9BL2MGaSigExavsM}{Touching Point} and \href{https://open.spotify.com/album/6Im0Un3txvscirw0RBhZ7y}{Last Transmission}
-\item Produced piano albums: \href{https://open.spotify.com/album/36yE0PeGFyDJtl4T127Bko}{Simple Piano} and \href{https://open.spotify.com/album/3TsZ2szcmFKWJ67yGMMwUJ}{Transitions on Piano}
+\item Produced \href{https://open.spotify.com/album/1BspGnlv7cWS85sPZ4nfLr}{one} and \href{https://open.spotify.com/album/3JIpCmtM3DP1ehxE80Ufeg}{two} indie rock, \href{https://open.spotify.com/album/3wqaFP9BL2MGaSigExavsM}{one} and \href{https://open.spotify.com/album/6Im0Un3txvscirw0RBhZ7y}{two} synthesizer, and \href{https://open.spotify.com/album/36yE0PeGFyDJtl4T127Bko}{one} and \href{https://open.spotify.com/album/3TsZ2szcmFKWJ67yGMMwUJ}{two} piano albums
 \end{comp}
 
 \end{body}
