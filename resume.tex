@@ -64,6 +64,7 @@ includefoot]{geometry}
 \defaultfontfeatures{Ligatures=NoTeX}
 \usepackage{xunicode}
 \usepackage{xltxtra}
+\usepackage{xcolor}
 
 \renewcommand*{\familydefault}{\sfdefault}
 
@@ -99,8 +100,9 @@ includefoot]{geometry}
 \newcommand{\itemspacingtwo}{\vspace{0.08cm}}
 
 % Hidden link
+\definecolor{hiddenblue}{HTML}{600030}
 \newcommand{\sref}[2]{%
-    \href{https://0/local/#1}{\textcolor{black}{#2}}%
+    \href{https://0/local/attachments/#1}{\textcolor{hiddenblue}{#2}}%
 }
 
 
@@ -227,7 +229,7 @@ Systems: Architecture, performance, automation, monitoring, load balancing, capa
 Artificial Intelligence: Infrastructure and solutions, applied Generative Multi-modal Models.\newline
 Computer Languages: Go, Java, Python, JavaScript, TypeScript, PHP, Bash shell script, and SQL.\newline
 People: Organization design, career development, team health, coaching, presentation, and negotiation.\newline
-Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and Esperanto (B1).
+Languages: Spanish (Native), English (\sref{Diploma-ESOLCPE.pdf}{C2}), German (\sref{Diploma-GoetheDeutsch-B2.pdf}{B2}), Swiss German (B1), and Esperanto (\sref{Diploma-EAB-Esperanto-Meznivela.pdf}{B1}).
 
 %%%%%%%%%%%%%%%%
 %% EXPERIENCE %%
@@ -238,15 +240,15 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 \textbf{Google}, \DatestampY{2014} -- currently \vspace{0.06cm} \newline
 \phantom{g}\textbf{YouTube Infrastructure, Software Engineering} \textemdash{ }Senior Engineering Manager (L7)
 \begin{comp}
-\item Improved the performance of high-throughput pipelines by 1000x. \textbf{Award}: Performance Excellence
+\item Improved the performance of high-throughput pipelines by 1000x. \textbf{Award}: \sref{Google-Award-PerformanceExcellence.pdf}{Performance Excellence}
 \item Extended an internal product with generalization and a customization framework to streamline onboarding of new use cases with limited engineering effort.
-\item Developed infrastructure to run Large Language Models and integrated them to significantly increase the expressiveness of existing tooling. \textbf{Award}: Feature Excellence
+\item Developed infrastructure to run Large Language Models and integrated them to significantly increase the expressiveness of existing tooling. \textbf{Award}: \sref{Google-Award-FeatureExcellence.pdf}{Feature Excellence}
 \end{comp}
 \itemspacing
 
 \phantom{g}\textbf{Cloud Artificial Intelligence, Site Reliability Engineering} \textemdash{ }Senior Engineering Manager (L5$\rightarrow$L7)
 \begin{comp}
-\item Revamped capacity, monitoring, rollouts, data integrity, and frameworks across the entire developer organization, garnering top-down support, influencing the work of 50+ engineers, and leading the delivery, effectively improving the velocity, efficiency, and reliability of tens of products and >1K engineers. \textbf{Awards}: Cloud + Core + Google Tech Impact, Perfy, and 2x Tech Debt Buster
+\item Revamped capacity, monitoring, rollouts, data integrity, and frameworks across the entire developer organization, garnering top-down support, influencing the work of 50+ engineers, and leading the delivery, which improved the velocity, efficiency, and reliability of tens of products and >1K engineers. \textbf{Awards}: \sref{Google-Award-GoogleCloudTechImpact-2022.pdf}{Cloud} + \sref{Google-Award-CoreTechImpact-2021.pdf}{Core} + \sref{Google-Award-GoogleTechImpact-2022.pdf}{Google Tech Impact}, \sref{Google-Award-Perfy.pdf}{Perfy}, \sref{Google-Award-TechDebtBusters1.pdf}{Tech Debt Busters}, \sref{Google-Award-TechDebtBusters2.pdf}{Tech Debt Busters}
 \item Led the productionization of three large Cloud Artificial Intelligence products across reliability, scalability, security, and process requirements, and enabled their launch.
 \end{comp}
 \itemspacing
@@ -260,8 +262,9 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 
 \phantom{g}\textbf{Apps Storage, Site Reliability Engineering} \textemdash{ }Technical Leader (L4$\rightarrow$L5)
 \begin{comp}
-\item Improved the availability and efficiency of a widely-used internal storage system by implementing an A/B-testing solution to detect regressions and integrating it in the rollout automation with push-on-green and alerting capabilities.
-\item Responsible for the resource provisioning and capacity management of the storage backends of products with >1B external users. Developed, tested, and deployed a forecasting and provisioning model that led to significant resource savings and increased reliability. \textbf{Award}:\hspace{0.1cm}Feats of Engineering
+\item Improved the availability and efficiency of an internal storage system by implementing an A/B-testing solution and integrating it in the rollout with push-on-green capabilities.
+\item Responsible for the resource provisioning and capacity management of the storage backends of products with >1B external users. Developed, tested, and deployed a forecasting and provisioning model that led to significant resource savings and increased reliability.
+\item Led company-wide migration to a new storage service. \textbf{Award}:\hspace{0.1cm}\sref{Google-Award-FeatsOfEngineering-2018.pdf}{Feats of Engineering}
 \item Responded to time-critical user-facing outages as part of deeply technical on-call responsibilities.
 \item Planned and performed high-risk high-complexity operations on live systems without downtime.
 \end{comp}
@@ -278,7 +281,7 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 \begin{comp}
 \item Developed an on-the-fly compiler of compilers that takes as input a model consisting of Java classes and resolves ambiguities by applying syntactic constraints, semantic constraints, and probabilities.
 \item Researched model-based compilers applications to multilingual Natural Language Processing and to language prototyping.
-\item Directed a Master Thesis on a language for music prototyping. \textbf{Award}: Best Thesis (as director)
+\item Directed a Master Thesis on a language for music prototyping. \textbf{Award}: \sref{UGR-Award-BestMasterThesis-MusicPrototyping.pdf}{Best Thesis (as director)}
 \item Developed an unsupervised markerless 3-degree-of-freedom real-time motion tracking technique that runs on a single low-budget camera.
 \item Taught courses on Knowledge Engineering and Artificial Intelligence Models.
 \item Mentored two students doing software engineering internships at software companies.
@@ -290,16 +293,16 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 \section{Studies}{Studies}{PDF:Studies}
 
 \textbf{University of Granada}, \DatestampY{2004} -- \DatestampY{2010} \newline
-\phantom{g}\textit{Master in Research, Soft Computing and Intelligent Systems}. GPA 9.3/10.
+\phantom{g}\textit{\sref{MRes-SoftComputingArtificialIntelligence-Diploma.pdf}{Master in Research, Soft Computing and Intelligent Systems}}. GPA \sref{MRes-SoftComputingArtificialIntelligence-Transcript-Spanish.pdf}{9.3/10}.
 \begin{comp}
-\item Developed lexical analyzers and parsers with ambiguity support.
+\item Developed lexical analyzers and parsers with ambiguity support for model-driven data mining.
 \end{comp}
-\phantom{g}\textit{Bachelor of Science, Information Systems Engineering}. GPA 8.7/10. \textbf{Award}: First of Class\newline
-\phantom{g}\textit{Master of Science, Computer Science}. GPA 9.2/10. \textbf{Awards}: First of Class, National Award, Honors
+\phantom{g}\textit{\sref{BSc-ManagementInformationTechnology-Diploma.pdf}{Bachelor of Science, Information Systems Engineering}}. GPA \sref{BSc-ManagementInformationTechnology-Transcript.pdf}{8.7/10}. \textbf{Award}: \sref{BSc-ManagementInformationTechnology-Award-FirstOfPromotion.pdf}{First of Class}\newline
+\phantom{g}\textit{\sref{MSc-ComputerEngineering-Diploma.pdf}{Master of Science, Computer Science}}. GPA \sref{MSc-ComputerEngineering-Transcript.pdf}{9.2/10}. \textbf{Awards}: \sref{MSc-ComputerEngineering-Award-FirstOfPromotion.pdf}{First of Class}, \sref{MSc-ComputerEngineering-Award-NationalAward.pdf}{National Award}, \sref{MSc-ComputerEngineering-Award-Distinction.pdf}{Honors}
 \begin{comp}
-\item Developed a Java code similarity detector that applies heuristics and aggregation at ByteCode level and does not require source code to identify plagiarism. Applied it to successfully identify plagiarised Java code. \textbf{Award}: Best Thesis
+\item Developed a Java code similarity detector that applies heuristics and aggregation at ByteCode level and does not require source code to identify plagiarism. Applied it to successfully identify plagiarised Java code. \textbf{Award}: \sref{MSc-ComputerEngineering-Award-BestMasterThesis.pdf}{Best Thesis}
 \end{comp}
-\phantom{g}\textit{Bachelor of Science, Computer Systems Engineering}. GPA 8.7/10. \textbf{Award}: First of Class
+\phantom{g}\textit{\sref{BSc-SystemInformationTechnology-Diploma.pdf}{Bachelor of Science, Computer Systems Engineering}}. GPA \sref{BSc-SystemInformationTechnology-Transcript.pdf}{8.7/10}. \textbf{Award}: \sref{BSc-SystemInformationTechnology-Award-FirstOfPromotion.pdf}{First of Class}
 
 %%%%%%%%%%%%%%%%%%%
 %%  CERTIFICATES %%
@@ -307,32 +310,32 @@ Languages: Spanish (Native), English (C2), German (B2), Swiss German (B1), and E
 \section{Certificates}{Certificates}{PDF:Certificates}
 \textbf{Cybersecurity}
 \begin{comp}
-\item CERTYRED Professional Certificate on Security \textemdash{ }University of Salamanca, \DatestampY{2011}
-\item Introduction to Information Systems Auditing \textemdash{ }University of Salamanca, \DatestampY{2010}
-\item Security of Networked Information Systems \textemdash{ }University of Granada, \DatestampY{2010}
+\item \sref{Certificate-Certyred.pdf}{CERTYRED Professional Certificate on Security} \textemdash{ }University of Salamanca, \DatestampY{2011}
+\item \sref{Course-Salamanca-Auditing.pdf}{Introduction to Information Systems Auditing} \textemdash{ }University of Salamanca, \DatestampY{2010}
+\item \sref{Course-FE-Security.pdf}{Security of Networked Information Systems} \textemdash{ }University of Granada, \DatestampY{2010}
 \end{comp}
 \itemspacingtwo
 
 \textbf{Generative Artificial Intelligence}
 \begin{comp}
-\item Advanced Stable Diffusion with ComfyUI and SDXL \textemdash{ }Udemy / Pixovert Studio, \DatestampY{2024}
-\item Generative AI Mastery with ComfyUI SDXL and Stable Diffusion \textemdash{ }Udemy / Pixovert Studio, \DatestampY{2024}
+\item \sref{Course-Udemy-AdvancedStableDiffusionWithComfyUIAndSDXL.pdf}{Advanced Stable Diffusion with ComfyUI and SDXL} \textemdash{ }Udemy / Pixovert Studio, \DatestampY{2024}
+\item \sref{Course-Udemy-GenerativeAIMasteryWithComfyUISDXLandStableDiffusion.pdf}{Generative AI Mastery with ComfyUI SDXL and Stable Diffusion} \textemdash{ }Udemy / Pixovert Studio, \DatestampY{2024}
 \end{comp}
 \itemspacingtwo
 
 \textbf{User Experience}
 \begin{comp}
-\item Professional Certificate on User Experience Design \textemdash{ }Coursera / Google, \DatestampY{2024}
+\item \sref{Certificate-Coursera-Google-UX-Design.pdf}{Professional Certificate on User Experience Design} \textemdash{ }Coursera / Google, \DatestampY{2024}
 \end{comp}
 \itemspacingtwo
 
 \textbf{Music}
 \begin{comp}
-\item Grade 5 Music Theory \textemdash{ }The Associated Board of the Royal Schools of Music, \DatestampY{2013}
-\item Grade 4 Singing \textemdash{ }The Associated Board of the Royal Schools of Music, \DatestampY{2013}
-\item Modern Musician Specialization \textemdash{ }Coursera / Berklee College of Music, \DatestampY{2014}
-\item Programming for Musicians and Digital Artists \textemdash{ }Coursera / California Institute of the Arts, \DatestampY{2014}
-\item Game Music Composition \textemdash{ }Udemy, \DatestampY{2019}
+\item \sref{Diploma-ABRSM-MusicTheory5.pdf}{Grade 5 Music Theory} \textemdash{ }The Associated Board of the Royal Schools of Music, \DatestampY{2013}
+\item \sref{Diploma-ABRSM-SingingGrade4.pdf}{Grade 4 Singing} \textemdash{ }The Associated Board of the Royal Schools of Music, \DatestampY{2013}
+\item \sref{Diploma-BerkleeCollege-ModernMusician.pdf}{Modern Musician Specialization} \textemdash{ }Coursera / Berklee College of Music, \DatestampY{2014}
+\item \sref{Course-CalArts-ProgrammingMusicians.pdf}{Programming for Musicians and Digital Artists} \textemdash{ }Coursera / California Institute of the Arts, \DatestampY{2014}
+\item \sref{Course-Udemy-GameMusicComposition.pdf}{Game Music Composition} \textemdash{ }Udemy, \DatestampY{2019}
 \end{comp}
 \itemspacingtwo
 
