@@ -1,5 +1,5 @@
 # Resume
-Copyright (c) 2020 - Luis Quesada Torres - https://github.com/lquesada | www.luisquesada.com
+Copyright (c) 2020-2025 - Luis Quesada Torres - https://github.com/lquesada | www.luisquesada.com
 
 This repository contains my resume, which also serves as a resume template.
 
