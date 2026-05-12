@@ -65,6 +65,7 @@
 	\usepackage{xunicode}
 	\usepackage{xltxtra}
 	\usepackage{xcolor}
+	\usepackage[export]{adjustbox}
 
 	\renewcommand*{\familydefault}{\sfdefault}
 
@@ -98,6 +99,7 @@
 
 	% SIZEMARKER: Item spacing for second page
 	\newcommand{\itemspacingtwo}{\vspace{0.04cm}}
+	\newcommand{\portfoliospacing}{\vspace{0.5cm}}
 
 	% Hidden link
 	\definecolor{hiddenblue}{HTML}{600030}
@@ -113,9 +115,14 @@
 	\begin{longtable}{p{0.145\textwidth}p{0.81\textwidth}}}
 	{\par\end{longtable}\par}
 
+	\newenvironment{portfoliobody}
+	{\par\par
+	\begin{longtable}{p{0.22\textwidth}p{0.735\textwidth}}}
+	{\par\end{longtable}\par}
+
 	% Macro: section (new section for Education, Research Experience, etc.).
 	% SIZEMARKER: The separation here is between sections.
-	\renewcommand{\section}[3]{\\[-0.35cm]\pdfbookmark[2]{#2}{#3}\\%
+	\renewcommand{\section}[3]{\\[-0.40cm]\pdfbookmark[2]{#2}{#3}\\%
 	\raggedleft  %align to the right
 	{\fontsize{9.5pt}{9.5pt}\selectfont\bfseries\raggedright%
 	\MakeUppercase{#1}}&}
@@ -246,7 +253,7 @@
 	\phantom{g}\textbf{YouTube Trust \& Safety, Software Engineering} \textemdash{ }Senior Engineering Manager (L7)
 	\begin{comp}
 	\item Improved the performance of high-throughput pipelines by \textbf{1000x}. \textbf{Award}: \sref{Google-Award-PerformanceExcellence.pdf}{Performance Excellence}
-	\item Developed Large Languade Model infrastructure and tooling, used by \textbf{40+} engineering projects and \textbf{300+} analysts to define complex insights. \textbf{Awards}: \sref{Award-EngineeringExcellenceImpact.pdf}{Engineering} + \sref{Google-Award-FeatureExcellence.pdf}{Feature} + \sref{Google-Award-FeatureExcellence2.pdf}{Feature} Excellence
+	\item Developed Large Language Model infrastructure and tooling, used by \textbf{40+} engineering projects and \textbf{300+} analysts to define complex insights. \textbf{Awards}: \sref{Award-EngineeringExcellenceImpact.pdf}{Engineering} + \sref{Google-Award-FeatureExcellence.pdf}{Feature} + \sref{Google-Award-FeatureExcellence2.pdf}{Feature} Excellence
 	\end{comp}
 	\itemspacing
 
@@ -271,18 +278,29 @@
 	\itemspacing
 
 	%%%%%%%%%%%%%%%
-	%%  ACADEMIA %%
+	%% ADVOCACY %%
 	%%%%%%%%%%%%%%%
+	\section{Advocacy}{Advocacy}{PDF:Advocacy}
+	\textbf{People Leadership}
+	\begin{comp}
+	\item Co-authored a chapter on \href{https://landing.google.com/sre/workbook/chapters/overload/}{team overload} for \textit{The Site Reliability Workbook} published by \textbf{O'Reilly}.
+	\item Designed and scaled the \textit{Leadership Wheel of Misfortune} program to hundreds of sessions globally.
+	\item Mentored and coached hundreds of engineers, technical leaders, managers, interns, and apprentices.
+	\item Keynote speaker on career and technical topics at various universities.
+	\end{comp}
 
-	\section{Academia}{Academia}{PDF:Academia}
-	\textbf{University of Granada}, \DatestampY{2010} -- \DatestampY{2014} \vspace{0.06cm} \newline
+	\textbf{Technical Influence}
+	\begin{comp}
+	\item Published an article on \href{https://static.googleusercontent.com/media/sre.google/en//static/pdf/login\_winter20\_10\_torres.pdf}{best practices for capacity management}.
+	\item Published talks on \href{https://youtu.be/dhTVVWzpc4Q}{Google production environment}, \href{https://youtu.be/pOo0oKNM9I8}{resources}, and \href{https://youtu.be/d7nAGI\_NZPk}{Paxos}. Achieved \textbf{210K views}.
+	\end{comp}
+
+	%%%%%%%%%%%%%%%
+	%% EDUCATION %%
+	%%%%%%%%%%%%%%%
+	\section{Education}{Education}{PDF:Education}
+	\textbf{University of Granada}, \DatestampY{2004} -- \DatestampY{2014} \newline
 	\phantom{g}Research fellow on \href{https://doi.org/10.1142/S0129065712500190}{computer vision} and \href{https://doi.org/10.1142/S0218194014500375}{compilers}, led a thesis on \href{https://github.com/lquesada/ADAgio}{music languages}. \textbf{Award}: \sref{UGR-Award-BestMasterThesis-MusicPrototyping.pdf}{Best Thesis}.
-	%%%%%%%%%%%%%%%
-
-	%%  STUDIES  %%
-	%%%%%%%%%%%%%%%
-	\section{Studies}{Studies}{PDF:Studies}
-	\textbf{University of Granada}, \DatestampY{2004} -- \DatestampY{2010} \newline
 	\phantom{g}\textit{\sref{MRes-SoftComputingArtificialIntelligence-Diploma.pdf}{Master in Research}, Soft Computing and Intelligent Systems}. GPA \sref{MRes-SoftComputingArtificialIntelligence-Transcript-Spanish.pdf}{9.3/10}.\newline
 	\phantom{g}\textit{\sref{BSc-ManagementInformationTechnology-Diploma.pdf}{Bachelor of Science}, \sref{BSc-ManagementInformationTechnology-Transcript.pdf}{Information Systems Engineering}}. GPA \sref{BSc-ManagementInformationTechnology-Transcript-Spanish.pdf}{8.7/10}. \textbf{Award}: \sref{BSc-ManagementInformationTechnology-Award-FirstOfPromotion.pdf}{1st in Class}.\newline
 	\phantom{g}\textit{\sref{MSc-ComputerEngineering-Diploma.pdf}{Master of Science}, \sref{MSc-ComputerEngineering-Transcript.pdf}{Computer Science}}. GPA \sref{MSc-ComputerEngineering-Transcript-Spanish.pdf}{9.2/10}. \textbf{Awards}: \sref{MSc-ComputerEngineering-Award-FirstOfPromotion.pdf}{1st in Class}, \sref{MSc-ComputerEngineering-Award-NationalAward.pdf}{National Award}, \sref{MSc-ComputerEngineering-Award-BestMasterThesis.pdf}{Best Thesis}.\newline
@@ -291,13 +309,13 @@
 	%%%%%%%%%%%%%%%%%%%
 	%%  CERTIFICATES %%
 	%%%%%%%%%%%%%%%%%%%
-	\section{Certificates}{Certificates}{PDF:Certificates}
-	\sref{Certificate-Coursera-IBM-GenerativeAIEngineering.pdf}{Professional Certificate on Generative Artificial Intelligence Engineering} \textemdash{ }IBM, \DatestampY{2024} \newline
-	\sref{Certificate-Coursera-IBM-AIDeveloper.pdf}{Professional Certificate on Artificial Intelligence Development} \textemdash{ }IBM, \DatestampY{2024} \newline
-	\sref{Certificate-Coursera-Google-Cybersecurity.pdf}{Professional Certificate on Cybersecurity} \textemdash{ }Google, \DatestampY{2024} \newline
-	\sref{Certificate-Certyred.pdf}{Professional Certificate on Security} \textemdash{ }University of Salamanca, \DatestampY{2011} \newline
-	\sref{Certificate-Coursera-Google-UX-Design.pdf}{Professional Certificate on User Experience Design} \textemdash{ }Google, \DatestampY{2024} \newline
-	\sref{Certificate-HAREC.pdf}{Harmonized Amateur Radio Exam Certificate} \textemdash{ }Ofcom, \DatestampY{2025}
+	%\section{Certificates}{Certificates}{PDF:Certificates}
+	%\sref{Certificate-Coursera-IBM-GenerativeAIEngineering.pdf}{Professional Certificate on Generative Artificial Intelligence Engineering} \textemdash{ }IBM, \DatestampY{2024} \newline
+	%\sref{Certificate-Coursera-IBM-AIDeveloper.pdf}{Professional Certificate on Artificial Intelligence Development} \textemdash{ }IBM, \DatestampY{2024} \newline
+	%\sref{Certificate-Coursera-Google-Cybersecurity.pdf}{Professional Certificate on Cybersecurity} \textemdash{ }Google, \DatestampY{2024} \newline
+	%\sref{Certificate-Certyred.pdf}{Professional Certificate on Security} \textemdash{ }University of Salamanca, \DatestampY{2011} \newline
+	%\sref{Certificate-Coursera-Google-UX-Design.pdf}{Professional Certificate on User Experience Design} \textemdash{ }Google, \DatestampY{2024} \newline
+	%\sref{Certificate-HAREC.pdf}{Harmonized Amateur Radio Exam Certificate} \textemdash{ }Ofcom, \DatestampY{2025}
 	%\sref{Diploma-BerkleeCollege-ModernMusician.pdf}{Modern Musician Specialization} \textemdash{ }Berklee College of Music, \DatestampY{2014} \newline
 	%\sref{Diploma-ABRSM-MusicTheory5.pdf}{Grade 5 Music Theory} \textemdash{ }The Associated Board of the Royal Schools of Music, \DatestampY{2013} \newline
 	%\sref{Diploma-ABRSM-SingingGrade4.pdf}{Grade 4 Singing} \textemdash{ }The Associated Board of the Royal Schools of Music, \DatestampY{2013}
@@ -319,25 +337,25 @@
 \end{comp}
 \itemspacingtwo
 
-\textbf{Distributed Systems}
-\begin{comp}
-\item Published an article on \href{https://static.googleusercontent.com/media/sre.google/en//static/pdf/login\_winter20\_10\_torres.pdf}{best practices for capacity management}.
-\item Published talks on \href{https://youtu.be/dhTVVWzpc4Q}{Google production environment}, \href{https://youtu.be/pOo0oKNM9I8}{resources}, and \href{https://youtu.be/d7nAGI\_NZPk}{Paxos}. Achieved \textbf{210K views}.
-\end{comp}
-\itemspacingtwo
+%\textbf{Distributed Systems}
+%\begin{comp}
+%\item Published an article on \href{https://static.googleusercontent.com/media/sre.google/en//static/pdf/login\_winter20\_10\_torres.pdf}{best practices for capacity management}.
+%\item Published talks on \href{https://youtu.be/dhTVVWzpc4Q}{Google production environment}, \href{https://youtu.be/pOo0oKNM9I8}{resources}, and \href{https://youtu.be/d7nAGI\_NZPk}{Paxos}. Achieved \textbf{210K views}.
+%\end{comp}
+%\itemspacingtwo
 
-\textbf{Compilers}
-\begin{comp}
-\item \href{https://www.worldscientific.com/doi/abs/10.1142/S0218194014500375}{Designed} and developed \href{https://github.com/lquesada/ModelCC/tree/master/ModelCC/src/org/modelcc/lexer}{lexical analyzers}, \href{https://github.com/lquesada/ModelCC/tree/master/ModelCC/src/org/modelcc/parser}{parsers}, and a \href{https://github.com/lquesada/ModelCC}{model compiler} with ambiguity support.
-\item Developed a Java \href{https://github.com/lquesada/JSimil}{bytecode similarity detector} and a \href{https://github.com/lquesada/RunTimeSubclassFinder}{manifest-based run-time subclass finder}.
-\end{comp}
-\itemspacingtwo
+%\textbf{Compilers}
+%\begin{comp}
+%\item \href{https://www.worldscientific.com/doi/abs/10.1142/S0218194014500375}{Designed} and developed \href{https://github.com/lquesada/ModelCC/tree/master/ModelCC/src/org/modelcc/lexer}{lexical analyzers}, \href{https://github.com/lquesada/ModelCC/tree/master/ModelCC/src/org/modelcc/parser}{parsers}, and a \href{https://github.com/lquesada/ModelCC}{model compiler} with ambiguity support.
+%\item Developed a Java \href{https://github.com/lquesada/JSimil}{bytecode similarity detector} and a \href{https://github.com/lquesada/RunTimeSubclassFinder}{manifest-based run-time subclass finder}.
+%\end{comp}
+%\itemspacingtwo
 
-\textbf{Computer Vision}
-\begin{comp}
-\item Designed 3-degree-of-freedom \href{https://doi.org/10.1142/S0129065712500190}{motion tracking} with a single low-cost camera.
-\end{comp}
-\itemspacingtwo
+%\textbf{Computer Vision}
+%\begin{comp}
+%\item Designed 3-degree-of-freedom \href{https://doi.org/10.1142/S0129065712500190}{motion tracking} with a single low-cost camera.
+%\end{comp}
+%\itemspacingtwo
 
 \textbf{Video Game Development}
 \begin{comp}
@@ -354,17 +372,17 @@
 \end{comp}
 \itemspacingtwo
 
-\textbf{Computer-Aided Design}
-\begin{comp}
-\item Designed a \href{https://cad.onshape.com/documents/6f311a10ec51aa3537802148/w/56b352678d688f442bcec21d/e/27757cddc438c8a224282e5c}{parameterized velcro stand 3d printer model}. Example: \href{https://www.printables.com/model/1638498-whizz-loop-velcro-stand}{Whizz Loop antenna}.
-\end{comp}
-\itemspacingtwo
+%\textbf{Computer-Aided Design}
+%\begin{comp}
+%\item Designed a \href{https://cad.onshape.com/documents/6f311a10ec51aa3537802148/w/56b352678d688f442bcec21d/e/27757cddc438c8a224282e5c}{parameterized velcro stand 3d printer model}. Example: \href{https://www.printables.com/model/1638498-whizz-loop-velcro-stand}{Whizz Loop antenna}.
+%\end{comp}
+%\itemspacingtwo
 
-\textbf{People Management}
-\begin{comp}
-\item Co-authored a chapter on \href{https://landing.google.com/sre/workbook/chapters/overload/}{team overload} for The Site Reliability Workbook published by \textbf{O'Reilly}.
-\end{comp}
-\itemspacingtwo
+%\textbf{People Management}
+%\begin{comp}
+%\item Co-authored a chapter on \href{https://landing.google.com/sre/workbook/chapters/overload/}{team overload} for The Site Reliability Workbook published by \textbf{O'Reilly}.
+%\end{comp}
+%\itemspacingtwo
 
 \textbf{Literature}
 \begin{comp}
