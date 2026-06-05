@@ -5,8 +5,8 @@
 %% Resume template - https://github.com/lquesada/resume
 %% Check that URL for licensing information.
 %% 
-%% Copyright (c) 2024, Luis Quesada -
-%% https://github.com/lquesada | www.luisquesada.com
+%% Copyright (c) 2026, Luis Quesada -
+%% https://github.com/lquesada |luisquesada.com
 %%
 %% Heavily based of (an old version of) the SIMPLE-RESUME-CV
 %% by zachscrivena.
@@ -45,6 +45,7 @@
 
 % Long table for page layout.
 \usepackage{longtable}
+\usepackage{array}
 \usepackage{calc}
 
 % SIZEMARKER: Page margins
@@ -99,7 +100,7 @@ includefoot]{geometry}
 
 % SIZEMARKER: Item spacing for second page
 \newcommand{\itemspacingtwo}{\vspace{0.04cm}}
-\newcommand{\portfoliospacing}{\vspace{1.0cm}}
+\newcommand{\portfoliospacing}{0.35cm}
 
 % Hidden link
 \definecolor{hiddenblue}{HTML}{600030}
@@ -117,7 +118,7 @@ includefoot]{geometry}
 
 \newenvironment{portfoliobody}
 {\par\par
-\begin{longtable}{p{0.22\textwidth}p{0.735\textwidth}}}
+\begin{longtable}{m{0.22\textwidth}@{\hspace{0.08cm}}m{0.775\textwidth}}}
 {\par\end{longtable}\par}
 
 % Macro: section (new section for Education, Research Experience, etc.).
@@ -191,7 +192,7 @@ urlcolor=blue
 \vspace{-2.93cm} \par
 \huge{\textbf{Luis Quesada}} \par
 \large{\textbf{Senior Software Engineering Manager}} \par
-\normalsize{\href{https://lquesada.github.io/resume/}{www.luisquesada.com} | \href{http://github.com/lquesada}{github.com/lquesada}}\par
+\normalsize{\href{https://luisquesada.com}{luisquesada.com} | \href{http://github.com/lquesada}{github.com/lquesada}}\par
 \normalsize{Contact via \href{https://www.linkedin.com/in/luisquesadatorres}{linkedin.com/in/luisquesadatorres}}\par
 \normalsize{See recommendations \href{https://www.linkedin.com/in/luisquesadatorres/details/recommendations/}{here}}
 
@@ -330,6 +331,7 @@ Spanish (Native), English (\sref{Diploma-ESOLCPE.pdf}{C2}), German (\sref{Diplom
 \end{body}
 
 \newpage
+\renewcommand{\baselinestretch}{1.045}\selectfont
 
 \vspace{1.0cm}
 
@@ -338,36 +340,47 @@ Spanish (Native), English (\sref{Diploma-ESOLCPE.pdf}{C2}), German (\sref{Diplom
 %%%%%%%%%%%%%%%%%%%
 
 \begin{center}
-	{\fontsize{24pt}{24pt}\selectfont\bfseries Personal Projects}
+	{\fontsize{16pt}{16pt}\selectfont\bfseries Personal Projects using Generative Artificial Intelligence}
 \end{center}
 
-\vspace{0.2cm}
+\vspace{-0.2cm}
 
 \begin{portfoliobody}
-\includegraphics[width=\linewidth,height=\linewidth,valign=t]{iconinpaint.jpg} &
-\textbf{Inpaint Crop and Stitch} \textendash\ ComfyUI nodes \SmallEntryGap
-Developed ComfyUI nodes for generative artificial intelligence image inpainting that increase prompt adherence, output quality, and performance by cropping the image around the masked area, resizing it to the model's preferred resolution, and then seamlessly restitching and blending it back in place. \SmallEntryGap
-Achieved \textbf{730K downloads} and \textbf{1.1K GitHub stars}. \SmallEntryGap
-Links: \href{https://registry.comfy.org/nodes/comfyui-inpaint-cropandstitch}{Comfy Registry}, \href{https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch}{GitHub} \\ \portfoliospacing \\
+\includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconinpaint.jpg} &
+\textbf{Inpaint Crop and Stitch} \textendash\ ComfyUI Nodes for Inpainting\SmallEntryGap
+Developed ComfyUI nodes for generative image inpainting that increase prompt adherence, output quality, and performance by cropping the image around the masked area, resizing it to the model's preferred resolution, and then seamlessly restitching and blending it back in place. \SmallEntryGap
+Achieved \textbf{740K downloads} and \textbf{1.1K GitHub stars}. \SmallEntryGap
+Links: \href{https://registry.comfy.org/nodes/comfyui-inpaint-cropandstitch}{Comfy Registry}, \href{https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch}{GitHub} \\ \noalign{\vspace{\portfoliospacing}}
 
-\includegraphics[width=\linewidth,height=\linewidth,valign=t]{iconqft8.jpg} &
-\textbf{qFT8} \textendash\ Android Application for Amateur Radio \SmallEntryGap
-Developed an Android application for amateur radio communication using the FT8 digital mode with a portable transceiver. This application became the gold standard for portable FT8 operations. \SmallEntryGap
-Achieved \textbf{700+ monthly users} and a rating of \textbf{4.6/5}. \SmallEntryGap
-Links: \href{https://qft8.com/}{Homepage}, \href{https://play.google.com/store/apps/details?id=com.ft8.app}{Google Play Store}, \href{https://github.com/lquesada/qFT8}{GitHub}, \href{https://github.com/lquesada/qFT8/releases/tag/main}{Direct Download} \\ \portfoliospacing \\
+\includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconqft8.jpg} &
+\textbf{qFT8} \textendash\ Android Application for Portable FT8 Amateur Radio Communication\SmallEntryGap
+Developed an Android application for amateur radio FT8 digital mode communication with a portable transceiver. Offers a feature-rich yet intuitive interface, a web server for remote control, and complete integration with logbook services. \SmallEntryGap
+Achieved \textbf{800 monthly users} and a rating of \textbf{4.7/5}. \SmallEntryGap
+Links: \href{https://qft8.com/}{Homepage}, \href{https://play.google.com/store/apps/details?id=com.ft8.app}{Google Play Store}, \href{https://github.com/lquesada/qFT8}{GitHub}, \href{https://github.com/lquesada/qFT8/releases/tag/main}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
 
-\includegraphics[width=\linewidth,height=\linewidth,valign=t]{iconwindlereye.jpg} &
+\includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconcortexrush.jpg} &
+\textbf{Cortex Rush} \textendash\ Android Application for Brain Training \SmallEntryGap
+Developed an Android brain training application that is completely free and ad-free, and does not require user sign-up or network connectivity. Features five mini games built with an intuitive user experience and a satisfying difficulty progression. \SmallEntryGap
+Achieved \textbf{100 monthly users} and a rating of \textbf{4.9/5}. \SmallEntryGap
+Links: \href{https://cortexrush.com}{Homepage}, \href{https://play.google.com/store/apps/details?id=com.cortexrush.app}{Google Play Store}, \href{https://github.com/lquesada/CortexRush}{GitHub}, \href{https://github.com/lquesada/CortexRush/releases/tag/main}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
+
+\includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconmorsetraining.jpg} &
+\vspace{-0.1cm}\textbf{Morse Training} \textendash\ Android Application for Morse Practice \SmallEntryGap
+Developed an Android Morse code practice keyer. Features support for both on-screen and external hardware paddles, several keyer algorithms, a highly configurable user interface, ultra-low latency with minimal jitter, and transmission and reception training games. \SmallEntryGap
+Achieved \textbf{100 monthly users} and a rating of \textbf{4.6/5}. \SmallEntryGap
+Links: \href{https://morsetraining.com}{Homepage}, \href{https://play.google.com/store/apps/details?id=com.qft8.morsekeyer}{Google Play Store}, \href{https://github.com/lquesada/MorseTraining}{GitHub}, \href{https://github.com/lquesada/MorseTraining/releases/tag/main}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
+
+\includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconwindlereye.jpg} &
 \textbf{Windlereye} \textendash\ Music Project \SmallEntryGap
-Created a fictional alternative rock band leveraging generative artificial intelligence. Wrote the lyrics to over 200 original songs, ran a manual iterative process to generate them, and did heavy post-production to ensure high audio quality. \SmallEntryGap
-Achieved \textbf{60K streams}. \newline
-Presented as a keynote at the \textit{GenAI Zürich 2026} conference. \SmallEntryGap
-Links: \href{https://www.windlereye.com}{Homepage}, \href{https://open.spotify.com/artist/6GdiI8ZKeWhSY73WWOhbep}{Spotify}, \href{https://music.youtube.com/channel/UC4U16eJm9iTOS3j4q8_6w3w}{YouTube Music}, \href{https://www.youtube.com/@windlereye}{YouTube}, \href{https://music.apple.com/bm/artist/windlereye/1645538842}{Apple Music}, \href{https://wall.cdclick-europe.com/projects/windlereye-there-is-only-so-much-time}{Shop}, \href{https://github.com/windlereye/windlereye}{Direct Download} \\ \portfoliospacing \\
+Wrote lyrics and leveraged generative artificial intelligence to produce over 200 original songs. Invited to present at the \textit{AI: Heaven or Hype?} panel in the \textit{After the Algorithm Zürich 2026} art festival, and as a keynote speaker at the \textit{GenAI Zürich 2026} conference. \SmallEntryGap
+Achieved \textbf{60K streams}. \SmallEntryGap
+Links: \href{https://windlereye.com}{Homepage}, \href{https://open.spotify.com/artist/6GdiI8ZKeWhSY73WWOhbep}{Spotify}, \href{https://music.youtube.com/@windlereye}{YouTube Music}, \href{https://www.youtube.com/@windlereye}{YouTube}, \href{https://music.apple.com/bm/artist/windlereye/1645538842}{Apple Music}, \href{https://wall.cdclick-europe.com/projects/windlereye-there-is-only-so-much-time}{Shop}, \href{https://github.com/windlereye/windlereye}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
 
-\includegraphics[width=\linewidth,height=\linewidth,valign=t]{iconbooks.jpg} &
+\includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconbooks.jpg} &
 \textbf{Mi Libro De} \textendash\ Book Series \SmallEntryGap
-Leveraged generative AI to author and illustrate three Spanish-language children's books. These range from interactive monster readings to humorous school adventures and science fiction tales designed to improve comprehension. \SmallEntryGap
+Authored, and used generative artificial intelligence workflows to illustrate, three Spanish-language children's books. Spanning themes of fantastic creatures, school humor, fantasy, and science fiction, the books are strategically designed to enhance reading comprehension and engagement. \SmallEntryGap
 Achieved \textbf{20K downloads} and a rating of \textbf{4.2/5} over \textbf{1000+ reviews}. \SmallEntryGap
-Links: \href{https://milibrode.com/}{Homepage}, \href{https://www.amazon.es/dp/B0C4DVR9N5?binding=kindle_edition&qid=1778620270&sr=8-1&ref=dbs_dp_rwt_sb_pc_tkin}{Amazon Kindle}, \href{https://www.amazon.es/dp/B0C4DVR9N5?binding=paperback&ref_=saga_sdp_cft_dsk&qid=1778620270&sr=8-1}{Amazon Paperback}, \href{https://play.google.com/store/books/series?id=dqkvGwAAABBYsM}{Google Play Books}, \href{https://github.com/orgs/milibrode/repositories}{Direct Download} \\
+Links: \href{https://milibrode.com/}{Homepage}, \href{https://www.amazon.es/dp/B0C4DVR9N5?binding=kindle_edition&qid=1778620270&sr=8-1&ref=dbs_dp_rwt_sb_pc_tkin}{Amazon Kindle}, \href{https://www.amazon.es/dp/B0C4DVR9N5?binding=paperback&ref_=saga_sdp_cft_dsk&qid=1778620270&sr=8-1}{Amazon Paperback}, \href{https://play.google.com/store/books/series?id=dqkvGwAAABBYsM}{Google Play Books}, \href{https://github.com/orgs/milibrode/repositories}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
 
 \end{portfoliobody}
 

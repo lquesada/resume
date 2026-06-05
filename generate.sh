@@ -1,9 +1,11 @@
 #!/bin/bash
+rm bg*
 ADD=$(cat << EOM | tr -d '\n'
 <title>Luis Quesada - Resume<\\/title>
 <link rel="shortcut icon" type="image\\/png" href="favicon.png"\\/>
 EOM
 )
+shopt -s expand_aliases
 alias pdf2htmlEX='~/bin/pdf2htmlEX.AppImage'
 
 xelatex resume.tex
@@ -15,5 +17,5 @@ mv -f resume.html index.html
 
 cat resume.tex | sed -e s@'https://0/local/'@'https://lquesada.github.io/resume/'@g > resumepdf.tex
 xelatex resumepdf.tex
-rm -f resumepdf.aux resumepdf.log resumepdf.out resumepdf.tex pdf2htmlEX-64x64.png
+rm -f resumepdf.aux resumepdf.log resumepdf.out resumepdf.tex
 mv resumepdf.pdf resume.pdf
