@@ -116,7 +116,10 @@ includefoot]{geometry}
 % SIZEMARKER: Left vs. right columns
 \newenvironment{body}
 {\par\par
-\begin{longtable}{p{0.145\textwidth}p{0.81\textwidth}}}
+\begin{longtable}{p{0.145\textwidth}p{0.81\textwidth}}
+\endfirsthead
+\noalign{\vspace{0.4cm}}
+\endhead}
 {\par\end{longtable}\par}
 
 \newenvironment{portfoliobody}
@@ -279,7 +282,6 @@ Strategic Engineering Leader with a proven track record of architecting and exec
 \item Led the company-wide migration to a new storage service. \textbf{Award}: \sref{Google-Award-FeatsOfEngineering-2018.pdf}{Feats of Engineering}
 \end{comp}
 \itemspacing
-
 %%%%%%%%%%%%%%%
 %% ADVOCACY %%
 %%%%%%%%%%%%%%%
@@ -297,7 +299,7 @@ Strategic Engineering Leader with a proven track record of architecting and exec
 \item Published an article on \href{https://static.googleusercontent.com/media/sre.google/en//static/pdf/login\_winter20\_10\_torres.pdf}{capacity management best practices} in \textbf{USENIX} \textit{;login:} magazine.
 \item Published talks on \href{https://youtu.be/dhTVVWzpc4Q}{Google production environment}, \href{https://youtu.be/pOo0oKNM9I8}{resources}, and \href{https://youtu.be/d7nAGI\_NZPk}{Paxos}. Achieved \textbf{210K views}.
 \end{comp}
-
+\itemspacing
 %%%%%%%%%%%%%%%
 %% EDUCATION %%
 %%%%%%%%%%%%%%%
@@ -345,7 +347,7 @@ Spanish (Native), English (\sref{Diploma-ESOLCPE.pdf}{C2}), German (\sref{Diplom
 	{\fontsize{16pt}{16pt}\selectfont\bfseries Personal Projects using Generative Artificial Intelligence}
 \end{center}
 
-\vspace{-0.2cm}
+\vspace{0.1cm}
 
 \begin{portfoliobody}
 \includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconinpaint.jpg} &
