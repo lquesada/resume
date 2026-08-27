@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Create redacted directory if it doesn't exist
+mkdir -p redacted
+
+# Iterate over all PDF files in the current directory
+for pdf in *.pdf; do
+    # Get the base name of the PDF (without extension)
+    base_name=$(basename "$pdf" .pdf)
+
+    # Create a subdirectory for the current PDF
+    output_dir="redacted/$base_name"
+    mkdir -p "$output_dir"
+
+    # Convert PDF to JPG images, saving them to the subdirectory at 450 DPI
+    convert -density 350 -quality 70 "$pdf" "$output_dir/${base_name}_page_%03d.jpg"
+
+    echo "Processed $pdf into $output_dir"
+done
+
+
+
+
+cd redacted
+
+#!/bin/bash
+
+# Ensure we're in the redacted directory
+if [[ "$(basename "$PWD")" != "redacted" ]]; then
+    echo "Please run this script from the 'redacted/' directory."
+    exit 1
+fi
+
+# Iterate over all subdirectories in the current directory
+for dir in */; do
+    # Remove the trailing slash to get the base name of the subdirectory
+    base_name=$(basename "$dir")
+    
+    # Combine all JPG images in the subdirectory into a single PDF
+    output_pdf="${base_name}.pdf"
+    convert "$dir"/*.jpg "$output_pdf"
+    
+    echo "Recreated $output_pdf from $dir"
+done
+
