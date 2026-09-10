@@ -103,7 +103,7 @@ includefoot]{geometry}
 
 % SIZEMARKER: Item spacing for second page
 \newcommand{\itemspacingtwo}{\vspace{0.04cm}}
-\newcommand{\portfoliospacing}{0.35cm}
+\newcommand{\portfoliospacing}{0.24cm}
 
 % Hidden link
 \definecolor{hiddenblue}{HTML}{600030}
@@ -139,6 +139,7 @@ includefoot]{geometry}
 
 % Round image
 \usepackage{tikz}
+\usetikzlibrary{calc}
 
 \newcommand{\roundpic}[4][]{
 \tikz\node [circle, minimum width = #2,
@@ -232,6 +233,17 @@ urlcolor=blue
 
 Strategic Engineering Leader with a proven track record of architecting and executing long-term technical visions across Software and Site Reliability Engineering. Driving alignment with executive stakeholders, fostering innovation, and building top-performing organizations that deliver measurable business value.
 
+%%%%%%%%%%%%%%%
+%%  SKILLS   %% Summarized as languages section
+%%%%%%%%%%%%%%%
+
+%\section{Skills}{Skills}{PDF:Skills}
+%Generative Artificial Intelligence: Infrastructure, solutions, and application of multi-modal models\newline
+%Systems: Architecture, performance, automation, monitoring, load balancing, capacity, and data integrity\newline
+%Computer Languages: Go, Java, Python, JavaScript, TypeScript, PHP, Bash shell script, and SQL\newline
+%People: Organization design, career development, team health, coaching, presentation, and negotiation\newline
+%Languages: Spanish (Native), English (\sref{Diploma-ESOLCPE.pdf}{C2}), German (\sref{Diploma-GoetheDeutsch-B2.pdf}{B2}), Swiss German (B1), and Esperanto (\sref{Diploma-EAB-Esperanto-Meznivela.pdf}{B1})
+
 %%%%%%%%%%%%%%%%
 %% INDUSTRY %%
 %%%%%%%%%%%%%%%%
@@ -290,17 +302,30 @@ Strategic Engineering Leader with a proven track record of architecting and exec
 \item Published talks on \href{https://youtu.be/dhTVVWzpc4Q}{Google production environment}, \href{https://youtu.be/pOo0oKNM9I8}{resources}, and \href{https://youtu.be/d7nAGI\_NZPk}{Paxos}. Achieved \textbf{220K views}.
 \end{comp}
 \itemspacing
-
 %%%%%%%%%%%%%%%
 %% EDUCATION %%
 %%%%%%%%%%%%%%%
 \section{Education}{Education}{PDF:Education}
-\textbf{University of Granada} \newline % do not remove this: \DatestampY{2004} -- \DatestampY{2014} \newline
+\textbf{University of Granada} \newline %, \DatestampY{2004} -- \DatestampY{2014} \newline
 \phantom{g}Research fellow on \href{https://doi.org/10.1142/S0129065712500190}{computer vision} and \href{https://doi.org/10.1142/S0218194014500375}{compilers}, led a thesis on \href{https://github.com/lquesada/ADAgio}{music languages}. \textbf{Award}: \sref{UGR-Award-BestMasterThesis-MusicPrototyping.pdf}{Best Thesis}.\vspace{0.06cm}\newline
 \phantom{g}\textit{\sref{MRes-SoftComputingArtificialIntelligence-Diploma.pdf}{Master in Research}, Soft Computing and Intelligent Systems}. GPA \sref{MRes-SoftComputingArtificialIntelligence-Transcript-Spanish.pdf}{9.3/10}.\vspace{0.06cm}\newline
 \phantom{g}\textit{\sref{BSc-ManagementInformationTechnology-Diploma.pdf}{Bachelor of Science}, \sref{BSc-ManagementInformationTechnology-Transcript.pdf}{Information Systems Engineering}}. GPA \sref{BSc-ManagementInformationTechnology-Transcript-Spanish.pdf}{8.7/10}. \textbf{Award}: \sref{BSc-ManagementInformationTechnology-Award-FirstOfPromotion.pdf}{1st in Class}.\vspace{0.06cm}\newline
 \phantom{g}\textit{\sref{MSc-ComputerEngineering-Diploma.pdf}{Master of Science}, \sref{MSc-ComputerEngineering-Transcript.pdf}{Computer Science}}. GPA \sref{MSc-ComputerEngineering-Transcript-Spanish.pdf}{9.2/10}. \textbf{Awards}: \sref{MSc-ComputerEngineering-Award-FirstOfPromotion.pdf}{1st in Class}, \sref{MSc-ComputerEngineering-Award-NationalAward.pdf}{National Award}, \sref{MSc-ComputerEngineering-Award-BestMasterThesis.pdf}{Best Thesis}.\vspace{0.06cm}\newline
 \phantom{g}\textit{\sref{BSc-SystemInformationTechnology-Diploma.pdf}{Bachelor of Science}, \sref{BSc-SystemInformationTechnology-Transcript.pdf}{Computer Systems Engineering}}. GPA \sref{BSc-SystemInformationTechnology-Transcript-Spanish.pdf}{8.7/10}. \textbf{Award}: \sref{BSc-SystemInformationTechnology-Award-FirstOfPromotion.pdf}{1st in Class}.
+
+%%%%%%%%%%%%%%%%%%%
+%%  CERTIFICATES %%
+%%%%%%%%%%%%%%%%%%%
+%\section{Certificates}{Certificates}{PDF:Certificates}
+%\sref{Certificate-Coursera-IBM-GenerativeAIEngineering.pdf}{Professional Certificate on Generative Artificial Intelligence Engineering} \textemdash{ }IBM, \DatestampY{2024} \newline
+%\sref{Certificate-Coursera-IBM-AIDeveloper.pdf}{Professional Certificate on Artificial Intelligence Development} \textemdash{ }IBM, \DatestampY{2024} \newline
+%\sref{Certificate-Coursera-Google-Cybersecurity.pdf}{Professional Certificate on Cybersecurity} \textemdash{ }Google, \DatestampY{2024} \newline
+%\sref{Certificate-Certyred.pdf}{Professional Certificate on Security} \textemdash{ }University of Salamanca, \DatestampY{2011} \newline
+%\sref{Certificate-Coursera-Google-UX-Design.pdf}{Professional Certificate on User Experience Design} \textemdash{ }Google, \DatestampY{2024} \newline
+%\sref{Certificate-HAREC.pdf}{Harmonized Amateur Radio Exam Certificate} \textemdash{ }Ofcom, \DatestampY{2025}
+%\sref{Diploma-BerkleeCollege-ModernMusician.pdf}{Modern Musician Specialization} \textemdash{ }Berklee College of Music, \DatestampY{2014} \newline
+%\sref{Diploma-ABRSM-MusicTheory5.pdf}{Grade 5 Music Theory} \textemdash{ }The Associated Board of the Royal Schools of Music, \DatestampY{2013} \newline
+%\sref{Diploma-ABRSM-SingingGrade4.pdf}{Grade 4 Singing} \textemdash{ }The Associated Board of the Royal Schools of Music, \DatestampY{2013}
 
 %%%%%%%%%%%%%%%
 %% LANGUAGES %%
@@ -314,7 +339,7 @@ Spanish (Native), English (\sref{Diploma-ESOLCPE.pdf}{C2}), German (\sref{Diplom
 \newpage
 \renewcommand{\baselinestretch}{1.107}\selectfont
 
-\vspace{1.0cm}
+\vspace{0.3cm}
 
 %%%%%%%%%%%%%%%%%%%
 %%  PORTFOLIO    %%
@@ -328,41 +353,43 @@ Spanish (Native), English (\sref{Diploma-ESOLCPE.pdf}{C2}), German (\sref{Diplom
 
 \begin{portfoliobody}
 \includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconinpaint.jpg} &
-\textbf{Inpaint Crop and Stitch} \textendash\ ComfyUI Nodes for Inpainting\SmallEntryGap
+\textbf{ComfyUI-InpaintCropAndStitch} \textendash\ ComfyUI Nodes for Inpainting\SmallEntryGap
 Developed ComfyUI nodes for generative image inpainting that increase prompt adherence, output quality, and performance by cropping the image around the masked area, resizing it to the model's preferred resolution, and then seamlessly restitching and blending it back in place. \SmallEntryGap
-Achieved \textbf{850K downloads} and \textbf{1.1K GitHub stars}. \SmallEntryGap
+Achieved \textbf{870K downloads} and \textbf{1.2K GitHub stars}. \SmallEntryGap
 Links: \href{https://registry.comfy.org/nodes/comfyui-inpaint-cropandstitch}{Comfy Registry}, \href{https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch}{GitHub} \\ \noalign{\vspace{\portfoliospacing}}
 
-\includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconqft8.jpg} &
-\textbf{qFT8} \textendash\ Android Application for Portable FT8 Amateur Radio Communication\SmallEntryGap
-Developed an Android application for amateur radio FT8 digital mode communication with a portable transceiver. Offers a feature-rich yet intuitive interface, a web server for remote control, and complete integration with logbook services. Featured in the \textit{FUNKAMATEUR} magazine, \href{https://epaper.funkamateur.de/de/profiles/b331ffbbe3ce/editions/91b3ba2495081259c891}{08/2026}, 626-627.\SmallEntryGap
-Achieved \textbf{2.5K monthly users} and a rating of \textbf{4.74/5}. \SmallEntryGap
-Links: \href{https://qft8.com/}{Homepage}, \href{https://play.google.com/store/apps/details?id=com.ft8.app}{Google Play Store}, \href{https://github.com/lquesada/qFT8}{GitHub}, \href{https://github.com/lquesada/qFT8/releases/tag/main}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
+\noindent\begin{tikzpicture}
+  \node at (0.40\linewidth, 4.500cm) {\includegraphics[width=0.68\linewidth]{iconqft8.jpg}};
+  \draw[draw=gray!40, rounded corners=5pt, line width=0.8pt] (0.00\linewidth, -4.400cm) rectangle (0.80\linewidth, 6.000cm);
+  \draw[line width=1.2pt, color=gray!35, line cap=round] (0.40\linewidth, 3.000cm) -- (0.40\linewidth, -4.000cm);
+  \fill[gray!45] (0.40\linewidth, -4.000cm) circle (2.2pt);
+\end{tikzpicture} &
+{\fontsize{11pt}{13pt}\selectfont\bfseries Amateur Radio Contributions}\SmallEntryGap
+\textbf{qFT8} \textendash\ Android Application for Portable Amateur Radio\SmallEntryGap
+Developed an Android application for amateur radio FT8, FT4, FT2, JS8, WSPR, and LQ8 digital mode communication with a portable transceiver. Offers a feature-rich yet intuitive interface, a web server for remote control, and complete integration with logbook services. Featured in the \textit{FUNKAMATEUR} magazine, \href{https://epaper.funkamateur.de/de/profiles/b331ffbbe3ce/editions/91b3ba2495081259c891}{08/2026}, 626-627.\SmallEntryGap
+Achieved \textbf{1.5K monthly users} and a rating of \textbf{4.74/5}.\SmallEntryGap
+Links: \href{https://qft8.com/}{Homepage}, \href{https://play.google.com/store/apps/details?id=com.ft8.app}{Google Play Store}, \href{https://github.com/lquesada/qFT8}{GitHub}, \href{https://github.com/lquesada/qFT8/releases/tag/main}{Direct Download}\SmallEntryGap\vspace{0.12cm}
+
+\textbf{LQ Digital Mode Family} \textendash\ Next-Generation Weak-Signal Protocols\SmallEntryGap
+Developed the open-source LQ digital mode family by means of an optimized frame encoding. Achieves \textbf{1.5x the throughput} of FT8 and \textbf{3.33x+} in pile-up conditions with zero propagation penalty.\SmallEntryGap
+Links: \href{https://lq8.org}{Homepage}, \href{https://arxiv.org/abs/2609.06427}{arXiv}, \href{https://github.com/lquesada/lq_lib}{GitHub}\SmallEntryGap\vspace{0.12cm}
+
+\textbf{Morse Training} \textendash\ Android Application for Morse Practice\SmallEntryGap
+Developed an Android Morse code practice keyer. Features support for both on-screen and external hardware paddles, several keyer algorithms, a highly configurable user interface, ultra-low latency with minimal jitter, transmission and reception training games, and a learning method.\SmallEntryGap
+Achieved \textbf{400 monthly users} and a rating of \textbf{4.67/5}.\SmallEntryGap
+Links: \href{https://morsetraining.com}{Homepage}, \href{https://play.google.com/store/apps/details?id=com.qft8.morsekeyer}{Google Play Store}, \href{https://github.com/lquesada/MorseTraining}{GitHub}, \href{https://github.com/lquesada/MorseTraining/releases/tag/main}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
 
 \includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconwindlereye.jpg} &
 \textbf{Windlereye} \textendash\ Music Project \SmallEntryGap
 Wrote lyrics and leveraged generative artificial intelligence to produce over 200 original songs. Invited to present at the \textit{AI: Heaven or Hype?} panel in the \textit{After the Algorithm Zürich 2026} art festival, and as a keynote speaker at the \textit{GenAI Zürich 2026} conference. \SmallEntryGap
-Achieved \textbf{100K streams}. \SmallEntryGap
+Achieved \textbf{100K streams} and \textbf{4K monthly listeners}. \SmallEntryGap
 Links: \href{https://windlereye.com}{Homepage}, \href{https://open.spotify.com/artist/6GdiI8ZKeWhSY73WWOhbep}{Spotify}, \href{https://music.youtube.com/@windlereye}{YouTube Music}, \href{https://www.youtube.com/@windlereye}{YouTube}, \href{https://music.apple.com/bm/artist/windlereye/1645538842}{Apple Music}, \href{https://wall.cdclick-europe.com/projects/windlereye-there-is-only-so-much-time}{Shop}, \href{https://github.com/windlereye/windlereye}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
-
-\includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconcortexrush.jpg} &
-\textbf{Cortex Rush} \textendash\ Android Application for Brain Training \SmallEntryGap
-Developed an Android brain training application that is completely free and ad-free, and does not require user sign-up or network connectivity. Features five mini games built with an intuitive user experience and a satisfying difficulty progression. \SmallEntryGap
-Achieved \textbf{300 monthly users} and a rating of \textbf{5/5}. \SmallEntryGap
-Links: \href{https://cortexrush.com}{Homepage}, \href{https://play.google.com/store/apps/details?id=com.cortexrush.app}{Google Play Store}, \href{https://github.com/lquesada/CortexRush}{GitHub}, \href{https://github.com/lquesada/CortexRush/releases/tag/main}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
-
-\includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconmorsetraining.jpg} &
-\vspace{-0.1cm}\textbf{Morse Training} \textendash\ Android Application for Morse Practice \SmallEntryGap
-Developed an Android Morse code practice keyer. Features support for both on-screen and external hardware paddles, several keyer algorithms, a highly configurable user interface, ultra-low latency with minimal jitter, transmission and reception training games, and a learning method. \SmallEntryGap
-Achieved \textbf{400 monthly users} and a rating of \textbf{4.67/5}. \SmallEntryGap
-Links: \href{https://morsetraining.com}{Homepage}, \href{https://play.google.com/store/apps/details?id=com.qft8.morsekeyer}{Google Play Store}, \href{https://github.com/lquesada/MorseTraining}{GitHub}, \href{https://github.com/lquesada/MorseTraining/releases/tag/main}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
 
 \includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconbooks.jpg} &
 \textbf{Mi Libro De} \textendash\ Book Series \SmallEntryGap
 Authored, and used generative artificial intelligence workflows to illustrate, three Spanish-language children's books. Spanning themes of fantastic creatures, school humor, fantasy, and science fiction, the books are strategically designed to enhance reading comprehension and engagement. \SmallEntryGap
 Achieved \textbf{20K downloads} and a rating of \textbf{4.2/5} over \textbf{1000+ reviews}. \SmallEntryGap
 Links: \href{https://milibrode.com/}{Homepage}, \href{https://www.amazon.es/dp/B0C4DVR9N5?binding=kindle_edition&qid=1778620270&sr=8-1&ref=dbs_dp_rwt_sb_pc_tkin}{Amazon Kindle}, \href{https://www.amazon.es/dp/B0C4DVR9N5?binding=paperback&ref_=saga_sdp_cft_dsk&qid=1778620270&sr=8-1}{Amazon Paperback}, \href{https://play.google.com/store/books/series?id=dqkvGwAAABBYsM}{Google Play Books}, \href{https://github.com/orgs/milibrode/repositories}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
-
 \end{portfoliobody}
 
 \end{document}
