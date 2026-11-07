@@ -124,7 +124,7 @@ includefoot]{geometry}
 
 \newenvironment{portfoliobody}
 {\par\par
-\begin{longtable}{m{0.22\textwidth}@{\hspace{0.08cm}}m{0.775\textwidth}}}
+\begin{longtable}{m{0.209\textwidth}@{\hspace{0.08cm}}m{0.775\textwidth}@{}}}
 {\par\end{longtable}\par}
 
 % Macro: section (new section for Education, Research Experience, etc.).
@@ -355,39 +355,30 @@ Spanish (Native), English (\sref{Diploma-ESOLCPE.pdf}{C2}), German (\sref{Diplom
 \includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconinpaint.jpg} &
 \textbf{ComfyUI-InpaintCropAndStitch} \textendash\ ComfyUI Nodes for Inpainting\SmallEntryGap
 Developed ComfyUI nodes for generative image inpainting that increase prompt adherence, output quality, and performance by cropping the image around the masked area, resizing it to the model's preferred resolution, and then seamlessly restitching and blending it back in place. \SmallEntryGap
-Achieved \textbf{930K downloads} and \textbf{1.2K GitHub stars}. \SmallEntryGap
+Achieved \textbf{940K downloads} and \textbf{1.2K GitHub stars}. \SmallEntryGap
 Links: \href{https://registry.comfy.org/nodes/comfyui-inpaint-cropandstitch}{Comfy Registry}, \href{https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch}{GitHub} \\ \noalign{\vspace{\portfoliospacing}}
 
-\noindent\begin{tikzpicture}
-  \node at (0.40\linewidth, 4.500cm) {\includegraphics[width=0.68\linewidth]{iconqft8.jpg}};
-  \draw[draw=gray!40, rounded corners=5pt, line width=0.8pt] (0.00\linewidth, -4.400cm) rectangle (0.80\linewidth, 6.000cm);
-  \draw[line width=1.2pt, color=gray!35, line cap=round] (0.40\linewidth, 3.000cm) -- (0.40\linewidth, -4.000cm);
-  \fill[gray!45] (0.40\linewidth, -4.000cm) circle (2.2pt);
-\end{tikzpicture} &
-{\fontsize{11pt}{13pt}\selectfont\bfseries Amateur Radio Contributions}\SmallEntryGap
+\includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconqft8.jpg} &
 \textbf{qFT8} \textendash\ Android Application for Portable Amateur Radio\SmallEntryGap
-Developed an Android application for amateur radio FT8, FT4, FT2, JS8, WSPR, and LQ8 digital mode communication with a portable transceiver. Offers a feature-rich yet intuitive interface, a web server for remote control, and complete integration with logbook services. Featured in the \textit{FUNKAMATEUR} magazine, \href{https://epaper.funkamateur.de/de/profiles/b331ffbbe3ce/editions/91b3ba2495081259c891}{08/2026}, 626-627.\SmallEntryGap
-Achieved \textbf{6K monthly users} and a rating of \textbf{4.92/5}.\SmallEntryGap
-Links: \href{https://qft8.com/}{Homepage}, \href{https://play.google.com/store/apps/details?id=com.ft8.app}{Google Play Store}, \href{https://github.com/lquesada/qFT8}{GitHub}, \href{https://github.com/lquesada/qFT8/releases/tag/main}{Direct Download}\SmallEntryGap\vspace{0.12cm}
-
-\textbf{LQ Digital Mode Family} \textendash\ Next-Generation Weak-Signal Protocols\SmallEntryGap
-Developed the open-source LQ digital mode family by means of an optimized frame encoding. Achieves \textbf{1.5x the throughput} of FT8 and \textbf{4x} in pile-up conditions with zero propagation penalty.\SmallEntryGap
-Links: \href{https://lq8.org}{Homepage}, \href{https://arxiv.org/abs/2609.06427}{arXiv}, \href{https://github.com/lquesada/lq_lib}{GitHub}\SmallEntryGap\vspace{0.12cm}
-
-\textbf{Morse Training} \textendash\ Android Application for Morse Practice\SmallEntryGap
-Developed an Android Morse code practice keyer. Features support for both on-screen and external hardware paddles, several keyer algorithms, a highly configurable user interface, ultra-low latency with minimal jitter, transmission and reception training games, and a learning method.\SmallEntryGap
-Achieved \textbf{400 monthly users} and a rating of \textbf{4.67/5}.\SmallEntryGap
-Links: \href{https://morsetraining.com}{Homepage}, \href{https://play.google.com/store/apps/details?id=com.qft8.morsekeyer}{Google Play Store}, \href{https://github.com/lquesada/MorseTraining}{GitHub}, \href{https://github.com/lquesada/MorseTraining/releases/tag/main}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
+Developed an Android application for FT8, FT4, FT2, JS8, WSPR, and LQ8 digital modes on portable transceivers, with remote control and logbook integration. Featured in \textit{FUNKAMATEUR} \href{https://epaper.funkamateur.de/de/profiles/b331ffbbe3ce/editions/91b3ba2495081259c891}{08/2026}. Also designed the LQ digital mode family, whose highly optimized frame encoding delivers \mbox{\textbf{1.5x the throughput}} of FT8 and \textbf{4x} in pile-ups with zero propagation penalty.\SmallEntryGap
+Achieved \textbf{8K monthly users} and a rating of \textbf{4.92/5}.\SmallEntryGap
+Links: \href{https://qft8.com/}{Homepage}, \href{https://play.google.com/store/apps/details?id=com.ft8.app}{Google Play Store}, \href{https://github.com/lquesada/qFT8}{GitHub}, \href{https://github.com/lquesada/qFT8/releases/tag/main}{Direct Download}; LQ8: \href{https://lq8.org}{Homepage}, \href{https://arxiv.org/abs/2609.06427}{arXiv}, \href{https://github.com/lquesada/lq_lib}{GitHub} \\ \noalign{\vspace{\portfoliospacing}}
 
 \includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconwindlereye.jpg} &
 \textbf{Windlereye} \textendash\ Music Project \SmallEntryGap
-Wrote lyrics and leveraged generative artificial intelligence to produce over 200 original songs. Invited to present at the \textit{AI: Heaven or Hype?} panel in the \textit{After the Algorithm Zürich 2026} art festival, as a keynote speaker at the \textit{GenAI Zürich 2026} conference, at the \textit{Swiss AI weeks Hack Zurich} hackathon, and at the \textit{Grüezi Google Techtalks: AI Innovation} event at the \textit{Zürich AI Festival}. \SmallEntryGap
+Wrote lyrics and leveraged generative artificial intelligence to produce over 200 original songs. Invited as keynote speaker at the \textit{GenAI Zürich 2026} conference, as a panelist on \textit{AI: Heaven or Hype?} at the \textit{After the Algorithm Zürich 2026} art festival, and as a speaker at the \textit{Swiss AI weeks Hack Zurich} hackathon and the \textit{Grüezi Google Techtalks: AI Innovation} event of the \textit{Zürich AI Festival}. \SmallEntryGap
 Achieved \textbf{100K streams} and \textbf{4K monthly listeners}. \SmallEntryGap
 Links: \href{https://windlereye.com}{Homepage}, \href{https://open.spotify.com/artist/6GdiI8ZKeWhSY73WWOhbep}{Spotify}, \href{https://music.youtube.com/@windlereye}{YouTube Music}, \href{https://www.youtube.com/@windlereye}{YouTube}, \href{https://music.apple.com/bm/artist/windlereye/1645538842}{Apple Music}, \href{https://wall.cdclick-europe.com/projects/windlereye-there-is-only-so-much-time}{Shop}, \href{https://github.com/windlereye/windlereye}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
 
+\includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconecholoc.jpg} &
+\textbf{Echoloc} \textendash\ Browser Horror Video Game\SmallEntryGap
+Developed a first-person horror game where the player is blind and sees only by echolocation: every tongue click sketches the dark in a wave of dots, but the creatures can hear it too. Features seven procedural levels, twelve creatures, and 3D spatial audio.\SmallEntryGap
+Achieved \textbf{X monthly users} and a rating of \textbf{X/5} (just launched).\SmallEntryGap
+Links: \href{https://level102.com/echoloc/}{Homepage}, \href{https://level102.itch.io/echoloc}{itch.io}, \href{https://github.com/lquesada/level102}{GitHub} \\ \noalign{\vspace{\portfoliospacing}}
+
 \includegraphics[width=0.80\linewidth,height=0.80\linewidth]{iconbooks.jpg} &
 \textbf{Mi Libro De} \textendash\ Book Series \SmallEntryGap
-Authored, and used generative artificial intelligence workflows to illustrate, three Spanish-language children's books. Spanning themes of fantastic creatures, school humor, fantasy, and science fiction, the books are strategically designed to enhance reading comprehension and engagement. \SmallEntryGap
+Authored and used generative artificial intelligence workflows to illustrate, three Spanish-language children's books. Spanning themes of fantastic creatures, school humor, fantasy, and science fiction, the books are strategically designed to enhance reading comprehension and engagement. \SmallEntryGap
 Achieved \textbf{20K downloads} and a rating of \textbf{4.2/5} over \textbf{1000+ reviews}. \SmallEntryGap
 Links: \href{https://milibrode.com/}{Homepage}, \href{https://www.amazon.es/dp/B0C4DVR9N5?binding=kindle_edition&qid=1778620270&sr=8-1&ref=dbs_dp_rwt_sb_pc_tkin}{Amazon Kindle}, \href{https://www.amazon.es/dp/B0C4DVR9N5?binding=paperback&ref_=saga_sdp_cft_dsk&qid=1778620270&sr=8-1}{Amazon Paperback}, \href{https://play.google.com/store/books/series?id=dqkvGwAAABBYsM}{Google Play Books}, \href{https://github.com/orgs/milibrode/repositories}{Direct Download} \\ \noalign{\vspace{\portfoliospacing}}
 \end{portfoliobody}
